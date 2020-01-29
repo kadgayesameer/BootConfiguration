@@ -1,159 +1,86 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="width=device-width, initial-scale=1" name="viewport" />
-<meta name="description" content="Responsive Admin Template" />
-<meta name="" content="" />
-<title><tiles:insertAttribute name="title" /></title>
-<!-- google font -->
-<link
-	href="../../../../../fonts.googleapis.com/css6079.css?family=Poppins:300,400,500,600,700"
-	rel="stylesheet" type="text/css" />
-<!-- icons -->
-<link
-	href="${pageContext.request.contextPath }/static/plugins/simple-line-icons/simple-line-icons.min.css"
-	rel="stylesheet" type="text/css" />
-<link
-	href="${pageContext.request.contextPath }/static/fonts/font-awesome/css/font-awesome.min.css"
-	rel="stylesheet" type="text/css" />
-<link
-	href="${pageContext.request.contextPath }/static/fonts/material-design-icons/material-icon.css"
-	rel="stylesheet" type="text/css" />
-<!--bootstrap -->
-
-<link
-	href="${pageContext.request.contextPath }/static/plugins/bootstrap/css/bootstrap.min.css"
-	rel="stylesheet" type="text/css" />
-
-<!-- data tables -->
-<!-- data tables -->
-<link
-	href="${pageContext.request.contextPath }/static/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.css"
-	rel="stylesheet" type="text/css" />
-<!-- 
-<link
-	href="http://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"
-	rel="stylesheet" /> -->
-<link
-	href="${pageContext.request.contextPath }/static/plugins/summernote/summernote.css"
-	rel="stylesheet">
-<!-- Material Design Lite CSS -->
+<title>Bootstrap Dashboard by Bootstrapious.com</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<!-- Bootstrap CSS-->
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath }/static/plugins/material/material.min.css">
+	href="${pageContext.request.contextPath }/static/vendor/bootstrap/css/bootstrap.min.css">
+<!-- Font Awesome CSS-->
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath }/static/css/material_style.css">
-<!-- animation -->
-<link
-	href="${pageContext.request.contextPath }/static/css/pages/animate_page.css"
-	rel="stylesheet">
-<!-- inbox style -->
-<link
-	href="${pageContext.request.contextPath }/static/css/pages/inbox.min.css"
-	rel="stylesheet" type="text/css" />
-<!-- Theme Styles -->
-
-<link
-	href="${pageContext.request.contextPath }/static/css/plugins.min.css"
-	rel="stylesheet" type="text/css" />
-<link href="${pageContext.request.contextPath }/static/css/style.css"
-	rel="stylesheet" type="text/css" />
-<link
-	href="${pageContext.request.contextPath }/static/css/responsive.css"
-	rel="stylesheet" type="text/css" />
-<link
-	href="${pageContext.request.contextPath }/static/css/theme-color.css"
-	rel="stylesheet" type="text/css" />
-<!-- favicon -->
+	href="${pageContext.request.contextPath }/static/vendor/font-awesome/css/font-awesome.min.css">
+<!-- Fontastic Custom icon font-->
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath }/static/css/fontastic.css">
+<!-- Google fonts - Roboto -->
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath }/https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+<!-- jQuery Circle-->
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath }/static/css/grasp_mobile_progress_circle-1.0.0.min.css">
+<!-- Custom Scrollbar-->
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath }/static/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+<!-- theme stylesheet-->
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath }/static/css/style.default.css"
+	id="theme-stylesheet">
+<!-- Custom stylesheet - for your changes-->
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath }/static/css/custom.css">
+<!-- Favicon-->
 <link rel="shortcut icon"
-	href="${pageContext.request.contextPath }/static/img/logo/vbcmrLogo50X50.gif" />
-
-<style>
-.form-control {
-	border-radius: 0px;
-}
-</style>
+	href="${pageContext.request.contextPath }/static/img/favicon.ico">
+<!-- Tweaks for older IEs-->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
-
-<body
-	class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white dark-sidebar-color logo-dark">
-
-	<div class="page-wrapper">
+<body>
+	<div class="page">
+		<tiles:insertAttribute name="sidebar"></tiles:insertAttribute>
 		<tiles:insertAttribute name="header"></tiles:insertAttribute>
-		<div class="page-container">
-			<tiles:insertAttribute name="sidebar"></tiles:insertAttribute>
-			<div class="page-content-wrapper">
-				<div class="page-content">
-					<tiles:insertAttribute name="body"></tiles:insertAttribute>
-				</div>
-				<tiles:insertAttribute name="chatSidebarContainer"></tiles:insertAttribute>
-			</div>
-		</div>
+
+
+
+		<tiles:insertAttribute name="body"></tiles:insertAttribute>
+
+		<%-- <tiles:insertAttribute name="chatSidebarContainer"></tiles:insertAttribute> --%>
+
 		<tiles:insertAttribute name="footer"></tiles:insertAttribute>
 	</div>
 
-
+	<!-- JavaScript files-->
 	<script
-		src="${pageContext.request.contextPath }/static/plugins/jquery/jquery.min.js"></script>
+		src="${pageContext.request.contextPath }/static/vendor/jquery/jquery.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath }/static/plugins/popper/popper.min.js"></script>
+		src="${pageContext.request.contextPath }/static/vendor/popper.js/umd/popper.min.js">
+		
+	</script>
 	<script
-		src="${pageContext.request.contextPath }/static/plugins/jquery-blockui/jquery.blockui.min.js"></script>
+		src="${pageContext.request.contextPath }/static/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath }/static/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-	<!-- bootstrap -->
+		src="${pageContext.request.contextPath }/static/js/grasp_mobile_progress_circle-1.0.0.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath }/static/plugins/bootstrap/js/bootstrap.min.js"></script>
-
-	<!-- data tables -->
+		src="${pageContext.request.contextPath }/static/vendor/jquery.cookie/jquery.cookie.js">
+		
+	</script>
 	<script
-		src="${pageContext.request.contextPath }/static/plugins/datatables/jquery.dataTables.min.js"></script>
+		src="${pageContext.request.contextPath }/static/vendor/chart.js/Chart.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath }/static/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.js"></script>
+		src="${pageContext.request.contextPath }/static/vendor/jquery-validation/jquery.validate.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath }/static/js/pages/table/table_data.js"></script>
+		src="${pageContext.request.contextPath }/static/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath }/static/plugins/sparkline/jquery.sparkline.min.js"></script>
-	<script
-		src="${pageContext.request.contextPath }/static/js/pages/sparkline/sparkline-data.js"></script>
-	<!-- Common js-->
-	<script src="${pageContext.request.contextPath }/static/js/app.js"></script>
-	<script src="${pageContext.request.contextPath }/static/js/layout.js"></script>
-	<script
-		src="${pageContext.request.contextPath }/static/js/theme-color.js"></script>
-	<!-- material -->
-	<script
-		src="${pageContext.request.contextPath }/static/plugins/material/material.min.js"></script>
-	<!-- animation -->
-	<script
-		src="${pageContext.request.contextPath }/static/js/pages/ui/animations.js"></script>
-	<!-- chart js -->
-	<script
-		src="${pageContext.request.contextPath }/static/plugins/chart-js/Chart.bundle.js"></script>
-	<script
-		src="${pageContext.request.contextPath }/static/plugins/chart-js/utils.js"></script>
-	<%-- <script
-		src="${pageContext.request.contextPath }/static/js/pages/chart/chartjs/home-data.js"></script> --%>
-	<!-- summernote -->
-	<script
-		src="${pageContext.request.contextPath }/static/plugins/summernote/summernote.min.js"></script>
-	<script
-		src="${pageContext.request.contextPath }/static/js/pages/summernote/summernote-data.js"></script>
-
-	<!-- data tables -->
-
-
-	<!-- <script type="text/javascript"
-		src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script> -->
-
-	<!-- <script type="text/javascript">
-		jQuery(document).ready(function() {
-			jQuery('#example1').DataTable();
-		});
-	</script> -->
-
+		src="${pageContext.request.contextPath }/static/js/charts-home.js"></script>
+	<!-- Main File-->
+	<script src="${pageContext.request.contextPath }/static/js/front.js"></script>
 </body>
 </html>

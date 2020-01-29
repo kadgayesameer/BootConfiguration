@@ -7,14 +7,22 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class="page-footer">
-		<div class="page-footer-inner">
-			2019 &copy; All Rights Reserved &emsp;<a href="https://www.iceico.in"
-				target="_top" class="makerCss">ICEICO Technologies Pvt. Ltd. </a>
+	<footer class="main-footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6">
+					<p>Your company &copy; 2017-2019</p>
+				</div>
+				<div class="col-sm-6 text-right">
+					<p>
+						Design by <a
+							href="https://bootstrapious.com/p/bootstrap-4-dashboard"
+							class="external">Bootstrapious</a>
+					</p>
+					<!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions and it helps me to run Bootstrapious. Thank you for understanding :)-->
+				</div>
+			</div>
 		</div>
-		<div class="scroll-to-top">
-			<i class="icon-arrow-up"></i>
-		</div>
-	</div>
+	</footer>
 </body>
 </html>

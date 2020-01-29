@@ -6,853 +6,594 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-.materialicon {
-	margin-top: 22px;
-}
-
-.notificationicon {
-	margin-top: 10px;
-}
 </style>
 </head>
 <body>
-	<div class="page-bar">
-		<div class="page-title-breadcrumb">
-			<div class=" pull-left">
-				<div class="page-title">Dashboard</div>
-				<!-- <h1>hello</h1> -->
-			</div>
-			<ol class="breadcrumb page-breadcrumb pull-right">
-				<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
-					href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i></li>
-				<li class="active">Dashboard</li>
-			</ol>
-		</div>
-	</div>
-	<!-- start widget -->
-	<div class="state-overview">
-		<div class="row">
-			<div class="col-xl-3 col-md-6 col-12">
-				<div class="info-box bg-b-orange">
-					<span class="info-box-icon push-bottom"><i
-						class="material-icons materialicon">shopping_cart</i></span>
-					<div class="info-box-content">
-						<span class="info-box-text">Orders</span> <span
-							class="info-box-number">450</span>
-						<div class="progress">
-							<div class="progress-bar" style="width: 45%"></div>
+	<!-- Counts Section -->
+	<section class="dashboard-counts section-padding">
+		<div class="container-fluid">
+			<div class="row">
+				<!-- Count item widget -->
+				<div class="col-xl-2 col-md-4 col-6">
+					<div class="wrapper count-title d-flex">
+						<div class="icon">
+							<i class="icon-user"></i>
 						</div>
-						<span class="progress-description"> 45% Increase in 28 Days
-						</span>
-					</div>
-					<!-- /.info-box-content -->
-				</div>
-				<!-- /.info-box -->
-			</div>
-			<!-- /.col -->
-			<div class="col-xl-3 col-md-6 col-12">
-				<div class="info-box bg-b-purple">
-					<span class="info-box-icon push-bottom"><i
-						class="material-icons materialicon">redeem</i></span>
-					<div class="info-box-content">
-						<span class="info-box-text">Monthly Sales</span> <span
-							class="info-box-number">155</span>
-						<div class="progress">
-							<div class="progress-bar" style="width: 40%"></div>
+						<div class="name">
+							<strong class="text-uppercase">New Clients</strong><span>Last
+								7 days</span>
+							<div class="count-number">25</div>
 						</div>
-						<span class="progress-description"> 40% Increase in 28 Days
-						</span>
 					</div>
-					<!-- /.info-box-content -->
 				</div>
-				<!-- /.info-box -->
-			</div>
-			<!-- /.col -->
-			<div class="col-xl-3 col-md-6 col-12">
-				<div class="info-box bg-b-cyan">
-					<span class="info-box-icon push-bottom"><i
-						class="material-icons materialicon">group</i></span>
-					<div class="info-box-content">
-						<span class="info-box-text">New Users</span> <span
-							class="info-box-number">52</span>
-						<div class="progress">
-							<div class="progress-bar" style="width: 85%"></div>
+				<!-- Count item widget -->
+				<div class="col-xl-2 col-md-4 col-6">
+					<div class="wrapper count-title d-flex">
+						<div class="icon">
+							<i class="icon-padnote"></i>
 						</div>
-						<span class="progress-description"> 85% Increase in 28 Days
-						</span>
-					</div>
-					<!-- /.info-box-content -->
-				</div>
-				<!-- /.info-box -->
-			</div>
-			<!-- /.col -->
-			<div class="col-xl-3 col-md-6 col-12">
-				<div class="info-box bg-b-black">
-					<span class="info-box-icon push-bottom"><i
-						class="material-icons materialicon">monetization_on</i></span>
-					<div class="info-box-content">
-						<span class="info-box-text">Collection</span> <span
-							class="info-box-number">13,921</span><span>$</span>
-						<div class="progress">
-							<div class="progress-bar" style="width: 50%"></div>
+						<div class="name">
+							<strong class="text-uppercase">Work Orders</strong><span>Last
+								5 days</span>
+							<div class="count-number">400</div>
 						</div>
-						<span class="progress-description"> 50% Increase in 28 Days
-						</span>
-					</div>
-					<!-- /.info-box-content -->
-				</div>
-				<!-- /.info-box -->
-			</div>
-			<!-- /.col -->
-		</div>
-	</div>
-	<!-- end widget -->
-	<!-- chart start -->
-	<div class="row">
-		<div class="col-sm-8">
-			<div class="card card-box">
-				<div class="card-head">
-					<header>Chart Survey</header>
-					<div class="tools">
-						<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
-						<a class="t-collapse btn-color fa fa-chevron-down"
-							href="javascript:;"></a> <a class="t-close btn-color fa fa-times"
-							href="javascript:;"></a>
 					</div>
 				</div>
-				<div class="card-body no-padding height-9">
-					<div class="row">
-						<canvas id="canvas1"></canvas>
+				<!-- Count item widget -->
+				<div class="col-xl-2 col-md-4 col-6">
+					<div class="wrapper count-title d-flex">
+						<div class="icon">
+							<i class="icon-check"></i>
+						</div>
+						<div class="name">
+							<strong class="text-uppercase">New Quotes</strong><span>Last
+								2 months</span>
+							<div class="count-number">342</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="col-sm-4">
-			<div class="card card-box">
-				<div class="card-head">
-					<header>Chart Survey</header>
-					<div class="tools">
-						<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
-						<a class="t-collapse btn-color fa fa-chevron-down"
-							href="javascript:;"></a> <a class="t-close btn-color fa fa-times"
-							href="javascript:;"></a>
+				<!-- Count item widget -->
+				<div class="col-xl-2 col-md-4 col-6">
+					<div class="wrapper count-title d-flex">
+						<div class="icon">
+							<i class="icon-bill"></i>
+						</div>
+						<div class="name">
+							<strong class="text-uppercase">New Invoices</strong><span>Last
+								2 days</span>
+							<div class="count-number">123</div>
+						</div>
 					</div>
 				</div>
-				<div class="card-body no-padding height-9">
-					<div class="row">
-						<canvas id="chartjs_pie"></canvas>
+				<!-- Count item widget -->
+				<div class="col-xl-2 col-md-4 col-6">
+					<div class="wrapper count-title d-flex">
+						<div class="icon">
+							<i class="icon-list"></i>
+						</div>
+						<div class="name">
+							<strong class="text-uppercase">Open Cases</strong><span>Last
+								3 months</span>
+							<div class="count-number">92</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Chart end -->
-	<div class="row">
-		<div class="col-md-8 col-sm-12 col-12">
-			<div class="card card-box">
-				<div class="card-head">
-					<header>Assign Task</header>
-					<div class="tools">
-						<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
-						<a class="t-collapse btn-color fa fa-chevron-down"
-							href="javascript:;"></a> <a class="t-close btn-color fa fa-times"
-							href="javascript:;"></a>
-					</div>
-				</div>
-				<div class="card-body ">
-					<div class="table-wrap">
-						<div class="table-responsive tblHeightSet small-slimscroll-style">
-							<table class="table display product-overview mb-30"
-								id="support_table">
-								<thead>
-									<tr>
-										<th>#</th>
-										<th>Task</th>
-										<th>Assigned Agents</th>
-										<th>status</th>
-										<th>Progress</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>1</td>
-										<td>Preparation for cricket team</td>
-										<td>Kenny Josh</td>
-										<td><span class="label label-sm label-success">Done</span>
-										</td>
-										<td>
-											<div class="progress">
-												<div
-													class="progress-bar progress-bar-success progress-bar-striped active"
-													role="progressbar" aria-valuenow="90" aria-valuemin="0"
-													aria-valuemax="100" style="width: 100%;">
-													<span class="sr-only">100% Complete</span>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td>Annual function preparation</td>
-										<td>Mark</td>
-										<td><span class="label label-sm label-warning">
-												Pending </span></td>
-										<td>
-											<div class="progress">
-												<div
-													class="progress-bar progress-bar-warning progress-bar-striped active"
-													role="progressbar" aria-valuenow="90" aria-valuemin="0"
-													aria-valuemax="100" style="width: 70%;">
-													<span class="sr-only">70% Complete</span>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>4</td>
-										<td>Final year exam paper set</td>
-										<td>Felix</td>
-										<td><span class="label label-sm label-danger">Suspended</span>
-										</td>
-										<td>
-											<div class="progress">
-												<div
-													class="progress-bar progress-bar-danger progress-bar-striped active"
-													role="progressbar" aria-valuenow="90" aria-valuemin="0"
-													aria-valuemax="100" style="width: 50%;">
-													<span class="sr-only">50% Complete</span>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>5</td>
-										<td>Placement report</td>
-										<td>Beryl</td>
-										<td><span class="label label-sm label-success ">Done</span>
-										</td>
-										<td>
-											<div class="progress">
-												<div
-													class="progress-bar progress-bar-success progress-bar-striped active"
-													role="progressbar" aria-valuenow="100" aria-valuemin="0"
-													aria-valuemax="100" style="width: 100%;">
-													<span class="sr-only">100% Complete</span>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>6</td>
-										<td>Fees collection report</td>
-										<td>Jayesh</td>
-										<td><span class="label label-sm label-success ">Done</span>
-										</td>
-										<td>
-											<div class="progress">
-												<div
-													class="progress-bar progress-bar-success progress-bar-striped active"
-													role="progressbar" aria-valuenow="90" aria-valuemin="0"
-													aria-valuemax="100" style="width: 100%;">
-													<span class="sr-only">100% Complete</span>
-												</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>7</td>
-										<td>Library book status</td>
-										<td>Sharma</td>
-										<td><span class="label label-sm label-danger">Suspended</span>
-										</td>
-										<td>
-											<div class="progress">
-												<div
-													class="progress-bar progress-bar-danger progress-bar-striped active"
-													role="progressbar" aria-valuenow="90" aria-valuemin="0"
-													aria-valuemax="100" style="width: 20%;">
-													<span class="sr-only">20% Complete</span>
-												</div>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
+				<!-- Count item widget -->
+				<div class="col-xl-2 col-md-4 col-6">
+					<div class="wrapper count-title d-flex">
+						<div class="icon">
+							<i class="icon-list-1"></i>
+						</div>
+						<div class="name">
+							<strong class="text-uppercase">New Cases</strong><span>Last
+								7 days</span>
+							<div class="count-number">70</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4 col-sm-12 col-12">
-			<div class="card  card-box">
-				<div class="card-head">
-					<header>Notifications</header>
-					<div class="tools">
-						<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
-						<a class="t-collapse btn-color fa fa-chevron-down"
-							href="javascript:;"></a> <a class="t-close btn-color fa fa-times"
-							href="javascript:;"></a>
+	</section>
+	<!-- Header Section -->
+	<section class="dashboard-header section-padding">
+		<div class="container-fluid">
+			<div class="row d-flex align-items-md-stretch">
+				<!-- To Do List -->
+				<div class="col-lg-3 col-md-6">
+					<div class="card to-do">
+						<h2 class="display h4">To do List</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<ul class="check-lists list-unstyled">
+							<li class="d-flex align-items-center"><input type="checkbox"
+								id="list-1" name="list-1" class="form-control-custom"> <label
+								for="list-1">Similique sunt in culpa qui officia</label></li>
+							<li class="d-flex align-items-center"><input type="checkbox"
+								id="list-2" name="list-2" class="form-control-custom"> <label
+								for="list-2">Ed ut perspiciatis unde omnis iste</label></li>
+							<li class="d-flex align-items-center"><input type="checkbox"
+								id="list-3" name="list-3" class="form-control-custom"> <label
+								for="list-3">At vero eos et accusamus et iusto </label></li>
+							<li class="d-flex align-items-center"><input type="checkbox"
+								id="list-4" name="list-4" class="form-control-custom"> <label
+								for="list-4">Explicabo Nemo ipsam voluptatem</label></li>
+							<li class="d-flex align-items-center"><input type="checkbox"
+								id="list-5" name="list-5" class="form-control-custom"> <label
+								for="list-5">Similique sunt in culpa qui officia</label></li>
+							<li class="d-flex align-items-center"><input type="checkbox"
+								id="list-6" name="list-6" class="form-control-custom"> <label
+								for="list-6">At vero eos et accusamus et iusto </label></li>
+							<li class="d-flex align-items-center"><input type="checkbox"
+								id="list-7" name="list-7" class="form-control-custom"> <label
+								for="list-7">Similique sunt in culpa qui officia</label></li>
+							<li class="d-flex align-items-center"><input type="checkbox"
+								id="list-8" name="list-8" class="form-control-custom"> <label
+								for="list-8">Ed ut perspiciatis unde omnis iste</label></li>
+						</ul>
 					</div>
 				</div>
-				<div class="card-body no-padding height-9">
-					<div class="row">
-						<div class="noti-information notification-menu">
-							<div
-								class="notification-list mail-list not-list small-slimscroll-style">
-								<a href="javascript:;" class="single-mail"> <span
-									class="icon bg-primary"> <i
-										class="fa fa-user-o notificationicon"></i>
-								</span> <span class="text-purple">Abhay Jani</span> Added you as friend
-									<span class="notificationtime"> <small>Just Now</small>
-								</span>
-								</a> <a href="javascript:;" class="single-mail"> <span
-									class="icon blue-bgcolor"> <i
-										class="fa fa-envelope-o notificationicon"></i>
-								</span> <span class="text-purple">John Doe</span> send you a mail <span
-									class="notificationtime"> <small>Just Now</small>
-								</span>
-								</a> <a href="javascript:;" class="single-mail"> <span
-									class="icon bg-success"> <i
-										class="fa fa-check-square-o notificationicon"></i>
-								</span> Success Message <span class="notificationtime"> <small>
-											2 Days Ago</small>
-								</span>
-								</a> <a href="javascript:;" class="single-mail"> <span
-									class="icon bg-warning"> <i
-										class="fa fa-warning notificationicon"></i>
-								</span> <strong>Database Overloaded Warning!</strong> <span
-									class="notificationtime"> <small>1 Week Ago</small>
-								</span>
-								</a> <a href="javascript:;" class="single-mail"> <span
-									class="icon bg-primary"> <i
-										class="fa fa-user-o notificationicon"></i>
-								</span> <span class="text-purple">Abhay Jani</span> Added you as friend
-									<span class="notificationtime"> <small>Just Now</small>
-								</span>
-								</a> <a href="javascript:;" class="single-mail"> <span
-									class="icon blue-bgcolor"> <i
-										class="fa fa-envelope-o notificationicon"></i>
-								</span> <span class="text-purple">John Doe</span> send you a mail <span
-									class="notificationtime"> <small>Just Now</small>
-								</span>
-								</a> <a href="javascript:;" class="single-mail"> <span
-									class="icon bg-success"> <i
-										class="fa fa-check-square-o notificationicon"></i>
-								</span> Success Message <span class="notificationtime"> <small>
-											2 Days Ago</small>
-								</span>
-								</a> <a href="javascript:;" class="single-mail"> <span
-									class="icon bg-warning"> <i
-										class="fa fa-warning notificationicon"></i>
-								</span> <strong>Database Overloaded Warning!</strong> <span
-									class="notificationtime"> <small>1 Week Ago</small>
-								</span>
-								</a> <a href="javascript:;" class="single-mail"> <span
-									class="icon bg-danger"> <i
-										class="fa fa-times notificationicon"></i>
-								</span> <strong>Server Error!</strong> <span class="notificationtime">
-										<small>10 Days Ago</small>
-								</span>
-								</a>
+				<!-- Pie Chart -->
+				<div class="col-lg-3 col-md-6">
+					<div class="card project-progress">
+						<h2 class="display h4">Project Beta progress</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<div class="pie-chart">
+							<canvas id="pieChart" width="300" height="300"> </canvas>
+						</div>
+					</div>
+				</div>
+				<!-- Line Chart -->
+				<div
+					class="col-lg-6 col-md-12 flex-lg-last flex-md-first align-self-baseline">
+					<div class="card sales-report">
+						<h2 class="display h4">Sales marketing report</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Dolor amet officiis</p>
+						<div class="line-chart">
+							<canvas id="lineCahrt"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Statistics Section -->
+	<section class="statistics">
+		<div class="container-fluid">
+			<div class="row d-flex">
+				<div class="col-lg-4">
+					<!-- Income -->
+					<div class="card income text-center">
+						<div class="icon">
+							<i class="icon-line-chart"></i>
+						</div>
+						<div class="number">126,418</div>
+						<strong class="text-primary">All Income</strong>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+							sed do.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<!-- Monthly Usage -->
+					<div class="card data-usage">
+						<h2 class="display h4">Monthly Usage</h2>
+						<div class="row d-flex align-items-center">
+							<div class="col-sm-6">
+								<div id="progress-circle"
+									class="d-flex align-items-center justify-content-center"></div>
 							</div>
-							<div class="full-width text-center p-t-10">
-								<button type="button"
-									class="btn purple btn-outline btn-circle margin-0">View
-									All</button>
+							<div class="col-sm-6">
+								<strong class="text-primary">80.56 Gb</strong><small>Current
+									Plan</small><span>100 Gb Monthly</span>
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<!-- User Actibity -->
+					<div class="card user-activity">
+						<h2 class="display h4">User Activity</h2>
+						<div class="number">210</div>
+						<h3 class="h4 display">Social Users</h3>
+						<div class="progress">
+							<div role="progressbar" style="width: 25%" aria-valuenow="25"
+								aria-valuemin="0" aria-valuemax="100"
+								class="progress-bar progress-bar bg-primary"></div>
+						</div>
+						<div class="page-statistics d-flex justify-content-between">
+							<div class="page-statistics-left">
+								<span>Pages Visits</span><strong>230</strong>
+							</div>
+							<div class="page-statistics-right">
+								<span>New Visits</span><strong>73.4%</strong>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="row">
-		<!-- Quick Mail start -->
-		<div class="col-lg-6 col-md-12 col-sm-12 col-12">
-			<div class="card-box">
-				<div class="card-head">
-					<header>Quick Mail</header>
-					<button id="demo_menu-lower-right"
-						class="mdl-button mdl-js-button mdl-button--icon pull-right"
-						data-upgraded=",MaterialButton">
-						<i class="material-icons">more_vert</i>
-					</button>
-					<ul
-						class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-						data-mdl-for="demo_menu-lower-right">
-						<li class="mdl-menu__item"><i class="material-icons">assistant_photo</i>Action</li>
-						<li class="mdl-menu__item"><i class="material-icons">print</i>Another
-							action</li>
-						<li class="mdl-menu__item"><i class="material-icons">favorite</i>Something
-							else here</li>
-					</ul>
-				</div>
-				<div class="card-body ">
-					<div class="mail-list">
-						<div class="compose-mail">
-							<form method="post">
-								<div class="form-group">
-									<label for="to" class="">To:</label> <input type="text"
-										tabindex="1" id="to" class="form-control">
-									<div class="compose-options">
-										<a
-											onclick="$(this).hide(); $('#cc').parent().removeClass('hidden'); $('#cc').focus();"
-											href="javascript:;">Cc</a> <a
-											onclick="$(this).hide(); $('#bcc').parent().removeClass('hidden'); $('#bcc').focus();"
-											href="javascript:;">Bcc</a>
+	</section>
+	<!-- Updates Section -->
+	<section class="mt-30px mb-30px">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4 col-md-12">
+					<!-- Recent Updates Widget -->
+					<div id="new-updates" class="card updates recent-updated">
+						<div id="updates-header"
+							class="card-header d-flex justify-content-between align-items-center">
+							<h2 class="h5 display">
+								<a data-toggle="collapse" data-parent="#new-updates"
+									href="#updates-box" aria-expanded="true"
+									aria-controls="updates-box">News Updates</a>
+							</h2>
+							<a data-toggle="collapse" data-parent="#new-updates"
+								href="#updates-box" aria-expanded="true"
+								aria-controls="updates-box"><i class="fa fa-angle-down"></i></a>
+						</div>
+						<div id="updates-box" role="tabpanel" class="collapse show">
+							<ul class="news list-unstyled">
+								<!-- Item -->
+								<li class="d-flex justify-content-between">
+									<div class="left-col d-flex">
+										<div class="icon">
+											<i class="icon-rss-feed"></i>
+										</div>
+										<div class="title">
+											<strong>Lorem ipsum dolor sit amet.</strong>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+												elit, sed do eiusmod tempor.</p>
+										</div>
 									</div>
-								</div>
-								<div class="form-group hidden">
-									<label for="cc" class="">Cc:</label> <input type="text"
-										tabindex="2" id="cc" class="form-control">
-								</div>
-								<div class="form-group hidden">
-									<label for="bcc" class="">Bcc:</label> <input type="text"
-										tabindex="2" id="bcc" class="form-control">
-								</div>
-								<div class="form-group">
-									<label for="subject" class="">Subject:</label> <input
-										type="text" tabindex="1" id="subject" class="form-control">
-								</div>
-								<div>
-									<div id="summernote"></div>
-									<input type="file" class="default" multiple>
-								</div>
-								<!--   <div class="btn-group margin-top-20 ">
-	                                                <button class="btn btn-primary btn-sm margin-right-10"><i class="fa fa-check"></i> Send</button>
-                                           		</div> -->
-								<div class="box-footer clearfix">
-									<button type="button"
-										class="mdl-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-primary pull-right">
-										Send <i class="fa fa-paper-plane-o"></i>
-									</button>
-								</div>
-							</form>
+									<div class="right-col text-right">
+										<div class="update-date">
+											24<span class="month">Jan</span>
+										</div>
+									</div>
+								</li>
+								<!-- Item -->
+								<li class="d-flex justify-content-between">
+									<div class="left-col d-flex">
+										<div class="icon">
+											<i class="icon-rss-feed"></i>
+										</div>
+										<div class="title">
+											<strong>Lorem ipsum dolor sit amet.</strong>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+												elit, sed do eiusmod tempor.</p>
+										</div>
+									</div>
+									<div class="right-col text-right">
+										<div class="update-date">
+											24<span class="month">Jan</span>
+										</div>
+									</div>
+								</li>
+								<!-- Item -->
+								<li class="d-flex justify-content-between">
+									<div class="left-col d-flex">
+										<div class="icon">
+											<i class="icon-rss-feed"></i>
+										</div>
+										<div class="title">
+											<strong>Lorem ipsum dolor sit amet.</strong>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+												elit, sed do eiusmod tempor.</p>
+										</div>
+									</div>
+									<div class="right-col text-right">
+										<div class="update-date">
+											24<span class="month">Jan</span>
+										</div>
+									</div>
+								</li>
+								<!-- Item -->
+								<li class="d-flex justify-content-between">
+									<div class="left-col d-flex">
+										<div class="icon">
+											<i class="icon-rss-feed"></i>
+										</div>
+										<div class="title">
+											<strong>Lorem ipsum dolor sit amet.</strong>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+												elit, sed do eiusmod tempor.</p>
+										</div>
+									</div>
+									<div class="right-col text-right">
+										<div class="update-date">
+											24<span class="month">Jan</span>
+										</div>
+									</div>
+								</li>
+								<!-- Item -->
+								<li class="d-flex justify-content-between">
+									<div class="left-col d-flex">
+										<div class="icon">
+											<i class="icon-rss-feed"></i>
+										</div>
+										<div class="title">
+											<strong>Lorem ipsum dolor sit amet.</strong>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+												elit, sed do eiusmod tempor.</p>
+										</div>
+									</div>
+									<div class="right-col text-right">
+										<div class="update-date">
+											24<span class="month">Jan</span>
+										</div>
+									</div>
+								</li>
+								<!-- Item -->
+								<li class="d-flex justify-content-between">
+									<div class="left-col d-flex">
+										<div class="icon">
+											<i class="icon-rss-feed"></i>
+										</div>
+										<div class="title">
+											<strong>Lorem ipsum dolor sit amet.</strong>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+												elit, sed do eiusmod tempor.</p>
+										</div>
+									</div>
+									<div class="right-col text-right">
+										<div class="update-date">
+											24<span class="month">Jan</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Recent Updates Widget End -->
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<!-- Daily Feed Widget -->
+					<div id="daily-feeds" class="card updates daily-feeds">
+						<div id="feeds-header"
+							class="card-header d-flex justify-content-between align-items-center">
+							<h2 class="h5 display">
+								<a data-toggle="collapse" data-parent="#daily-feeds"
+									href="#feeds-box" aria-expanded="true"
+									aria-controls="feeds-box">Your daily Feeds </a>
+							</h2>
+							<div class="right-column">
+								<div class="badge badge-primary">10 messages</div>
+								<a data-toggle="collapse" data-parent="#daily-feeds"
+									href="#feeds-box" aria-expanded="true"
+									aria-controls="feeds-box"><i class="fa fa-angle-down"></i></a>
+							</div>
+						</div>
+						<div id="feeds-box" role="tabpanel" class="collapse show">
+							<div class="feed-box">
+								<ul class="feed-elements list-unstyled">
+									<!-- List -->
+									<li class="clearfix">
+										<div class="feed d-flex justify-content-between">
+											<div class="feed-body d-flex justify-content-between">
+												<a href="#" class="feed-profile"><img
+													src="${pageContext.request.contextPath }/static/img/avatar-5.jpg"
+													alt="person" class="img-fluid rounded-circle"></a>
+												<div class="content">
+													<strong>Aria Smith</strong><small>Posted a new blog
+													</small>
+													<div class="full-date">
+														<small>Today 5:60 pm - 12.06.2014</small>
+													</div>
+												</div>
+											</div>
+											<div class="date">
+												<small>5min ago</small>
+											</div>
+										</div>
+									</li>
+									<!-- List -->
+									<li class="clearfix">
+										<div class="feed d-flex justify-content-between">
+											<div class="feed-body d-flex justify-content-between">
+												<a href="#" class="feed-profile"><img
+													src="${pageContext.request.contextPath }/static/img/avatar-2.jpg" alt="person"
+													class="img-fluid rounded-circle"></a>
+												<div class="content">
+													<strong>Frank Williams</strong><small>Posted a new
+														blog </small>
+													<div class="full-date">
+														<small>Today 5:60 pm - 12.06.2014</small>
+													</div>
+													<div class="CTAs">
+														<a href="#" class="btn btn-xs btn-dark"><i
+															class="fa fa-thumbs-up"> </i>Like</a><a href="#"
+															class="btn btn-xs btn-dark"><i class="fa fa-heart">
+														</i>Love</a>
+													</div>
+												</div>
+											</div>
+											<div class="date">
+												<small>5min ago</small>
+											</div>
+										</div>
+									</li>
+									<!-- List -->
+									<li class="clearfix">
+										<div class="feed d-flex justify-content-between">
+											<div class="feed-body d-flex justify-content-between">
+												<a href="#" class="feed-profile"><img
+													src="${pageContext.request.contextPath }/static/img/avatar-3.jpg" alt="person"
+													class="img-fluid rounded-circle"></a>
+												<div class="content">
+													<strong>Ashley Wood</strong><small>Posted a new
+														blog </small>
+													<div class="full-date">
+														<small>Today 5:60 pm - 12.06.2014</small>
+													</div>
+												</div>
+											</div>
+											<div class="date">
+												<small>5min ago</small>
+											</div>
+										</div>
+									</li>
+									<!-- List -->
+									<li class="clearfix">
+										<div class="feed d-flex justify-content-between">
+											<div class="feed-body d-flex justify-content-between">
+												<a href="#" class="feed-profile"><img
+													src="${pageContext.request.contextPath }/static/img/avatar-1.jpg" alt="person"
+													class="img-fluid rounded-circle"></a>
+												<div class="content">
+													<strong>Jason Doe</strong><small>Posted a new blog
+													</small>
+													<div class="full-date">
+														<small>Today 5:60 pm - 12.06.2014</small>
+													</div>
+												</div>
+											</div>
+											<div class="date">
+												<small>5min ago</small>
+											</div>
+										</div>
+										<div class="message-card">
+											<small>Lorem Ipsum is simply dummy text of the
+												printing and typesetting industry. Lorem Ipsum has been the
+												industry's standard dummy text ever since the 1500s. Over
+												the years, sometimes by accident, sometimes on purpose
+												(injected humour and the like).</small>
+										</div>
+										<div class="CTAs pull-right">
+											<a href="#" class="btn btn-xs btn-dark"><i
+												class="fa fa-thumbs-up"> </i>Like</a>
+										</div>
+									</li>
+									<!-- List -->
+									<li class="clearfix">
+										<div class="feed d-flex justify-content-between">
+											<div class="feed-body d-flex justify-content-between">
+												<a href="#" class="feed-profile"><img
+													src="${pageContext.request.contextPath }/static/img/avatar-6.jpg" alt="person"
+													class="img-fluid rounded-circle"></a>
+												<div class="content">
+													<strong>Sam Martinez</strong><small>Posted a new
+														blog </small>
+													<div class="full-date">
+														<small>Today 5:60 pm - 12.06.2014</small>
+													</div>
+												</div>
+											</div>
+											<div class="date">
+												<small>5min ago</small>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Daily Feed Widget End -->
+				</div>
+				<div class="col-lg-4 col-md-6">
+					Recent Activities Widget
+					<div id="recent-activities-wrapper" class="card updates activities">
+						<div id="activites-header"
+							class="card-header d-flex justify-content-between align-items-center">
+							<h2 class="h5 display">
+								<a data-toggle="collapse"
+									data-parent="#recent-activities-wrapper" href="#activities-box"
+									aria-expanded="true" aria-controls="activities-box">Recent
+									Activities</a>
+							</h2>
+							<a data-toggle="collapse"
+								data-parent="#recent-activities-wrapper" href="#activities-box"
+								aria-expanded="true" aria-controls="activities-box"><i
+								class="fa fa-angle-down"></i></a>
+						</div>
+						<div id="activities-box" role="tabpanel" class="collapse show">
+							<ul class="activities list-unstyled">
+								<!-- Item -->
+								<li>
+									<div class="row">
+										<div class="col-4 date-holder text-right">
+											<div class="icon">
+												<i class="icon-clock"></i>
+											</div>
+											<div class="date">
+												<span>6:00 am</span><span class="text-info">6 hours
+													ago</span>
+											</div>
+										</div>
+										<div class="col-8 content">
+											<strong>Meeting</strong>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+												elit, sed do eiusmod tempor incididunt ut labore et dolore
+												magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+										</div>
+									</div>
+								</li>
+								<!-- Item -->
+								<li>
+									<div class="row">
+										<div class="col-4 date-holder text-right">
+											<div class="icon">
+												<i class="icon-clock"></i>
+											</div>
+											<div class="date">
+												<span>6:00 am</span><span class="text-info">6 hours
+													ago</span>
+											</div>
+										</div>
+										<div class="col-8 content">
+											<strong>Meeting</strong>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+												elit, sed do eiusmod tempor incididunt ut labore et dolore
+												magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+										</div>
+									</div>
+								</li>
+								<!-- Item -->
+								<li>
+									<div class="row">
+										<div class="col-4 date-holder text-right">
+											<div class="icon">
+												<i class="icon-clock"></i>
+											</div>
+											<div class="date">
+												<span>6:00 am</span><span class="text-info">6 hours
+													ago</span>
+											</div>
+										</div>
+										<div class="col-8 content">
+											<strong>Meeting</strong>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+												elit, sed do eiusmod tempor incididunt ut labore et dolore
+												magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+										</div>
+									</div>
+								</li>
+								<!-- Item -->
+								<li>
+									<div class="row">
+										<div class="col-4 date-holder text-right">
+											<div class="icon">
+												<i class="icon-clock"></i>
+											</div>
+											<div class="date">
+												<span>6:00 am</span><span class="text-info">6 hours
+													ago</span>
+											</div>
+										</div>
+										<div class="col-8 content">
+											<strong>Meeting</strong>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+												elit, sed do eiusmod tempor incididunt ut labore et dolore
+												magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Quick Mail end -->
-		<!-- Activity feed start -->
-		<div class="col-lg-6 col-md-12 col-sm-12 col-12">
-			<div class="card-box">
-				<div class="card-head">
-					<header>Activity Feed</header>
-					<button id="feedMenu"
-						class="mdl-button mdl-js-button mdl-button--icon pull-right"
-						data-upgraded=",MaterialButton">
-						<i class="material-icons">more_vert</i>
-					</button>
-					<ul
-						class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-						data-mdl-for="feedMenu">
-						<li class="mdl-menu__item"><i class="material-icons">assistant_photo</i>Action</li>
-						<li class="mdl-menu__item"><i class="material-icons">print</i>Another
-							action</li>
-						<li class="mdl-menu__item"><i class="material-icons">favorite</i>Something
-							else here</li>
-					</ul>
-				</div>
-				<div class="card-body ">
-					<ul class="feedBody">
-						<li class="active-feed">
-							<div class="feed-user-img">
-								<img
-									src="${pageContext.request.contextPath }/static/img/user/user1.jpg"
-									class="img-radius " alt="User-Profile-Image">
-							</div>
-							<h6>
-								<span class="feedLblStyle lblFileStyle">File</span> Sarah Smith
-								<small class="text-muted">6 hours ago</small>
-							</h6>
-							<p class="m-b-15 m-t-15">hii John, I have upload doc related
-								to task.</p>
+	</section>
 
-						</li>
-						<li class="diactive-feed">
-							<div class="feed-user-img">
-								<img
-									src="${pageContext.request.contextPath }/static/img/user/user2.jpg"
-									class="img-radius " alt="User-Profile-Image">
-							</div>
-							<h6>
-								<span class="feedLblStyle lblTaskStyle">Task </span> Jalpa Joshi<small
-									class="text-muted">5 hours ago</small>
-							</h6>
-							<p class="m-b-15 m-t-15">Please do as specify. Let me know if
-								you have any query.</p>
-						</li>
-						<li class="diactive-feed">
-							<div class="feed-user-img">
-								<img
-									src="${pageContext.request.contextPath }/static/img/user/user3.jpg"
-									class="img-radius " alt="User-Profile-Image">
-							</div>
-							<h6>
-								<span class="feedLblStyle lblCommentStyle">comment</span> Lina
-								Smith<small class="text-muted">6 hours ago</small>
-							</h6>
-							<p class="m-b-15 m-t-15">Hey, How are you??</p>
-						</li>
-						<li class="active-feed">
-							<div class="feed-user-img">
-								<img
-									src="${pageContext.request.contextPath }/static/img/user/user4.jpg"
-									class="img-radius " alt="User-Profile-Image">
-							</div>
-							<h6>
-								<span class="feedLblStyle lblReplyStyle">Reply</span> Jacob Ryan
-								<small class="text-muted">7 hours ago</small>
-							</h6>
-							<p class="m-b-15 m-t-15">I am fine. You??</p>
-						</li>
-						<li class="active-feed">
-							<div class="feed-user-img">
-								<img
-									src="${pageContext.request.contextPath }/static/img/user/user5.jpg"
-									class="img-radius " alt="User-Profile-Image">
-							</div>
-							<h6>
-								<span class="feedLblStyle lblFileStyle">File</span> Sarah Smith
-								<small class="text-muted">6 hours ago</small>
-							</h6>
-							<p class="m-b-15 m-t-15">hii John, I have upload doc related
-								to task.</p>
-
-						</li>
-						<li class="diactive-feed">
-							<div class="feed-user-img">
-								<img
-									src="${pageContext.request.contextPath }/static/img/user/user6.jpg"
-									class="img-radius " alt="User-Profile-Image">
-							</div>
-							<h6>
-								<span class="feedLblStyle lblTaskStyle">Task </span> Jalpa Joshi<small
-									class="text-muted">5 hours ago</small>
-							</h6>
-							<p class="m-b-15 m-t-15">Please do as specify. Let me know if
-								you have any query.</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- Activity feed end -->
-	</div>
-	<div class="row">
-		<div class="col-lg-6 col-md-12 col-sm-12 col-12">
-			<div class="card-box">
-				<div class="card-head">
-					<header>Employee Performance</header>
-					<button id="panel-button8"
-						class="mdl-button mdl-js-button mdl-button--icon pull-right"
-						data-upgraded=",MaterialButton">
-						<i class="material-icons">more_vert</i>
-					</button>
-					<ul
-						class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-						data-mdl-for="panel-button8">
-						<li class="mdl-menu__item"><i class="material-icons">assistant_photo</i>Action</li>
-						<li class="mdl-menu__item"><i class="material-icons">print</i>Another
-							action</li>
-						<li class="mdl-menu__item"><i class="material-icons">favorite</i>Something
-							else here</li>
-					</ul>
-				</div>
-				<div class="card-body ">
-					<div class="table-responsive">
-						<table class="table table-striped custom-table table-hover">
-							<thead>
-								<tr>
-									<th>Roll No</th>
-									<th>Name</th>
-									<th>Graph</th>
-									<th>Action</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>23</td>
-									<td>John Smith</td>
-									<td><div id="sparkline"></div></td>
-									<td><a href="javascript:void(0)" class=""
-										data-toggle="tooltip" title="Edit"> <i class="fa fa-check"></i></a>
-										<a href="javascript:void(0)" class="text-inverse"
-										title="Delete" data-toggle="tooltip"> <i
-											class="fa fa-trash"></i></a></td>
-								</tr>
-								<tr>
-									<td>12</td>
-									<td>Sneha Pandit</td>
-									<td><div id="sparkline1"></div></td>
-									<td><a href="javascript:void(0)" class=""
-										data-toggle="tooltip" title="Edit"> <i class="fa fa-check"></i></a>
-										<a href="javascript:void(0)" class="text-inverse"
-										title="Delete" data-toggle="tooltip"> <i
-											class="fa fa-trash"></i></a></td>
-								</tr>
-								<tr>
-									<td>45</td>
-									<td>Sarah Smith</td>
-									<td><div id="sparkline2"></div></td>
-									<td><a href="javascript:void(0)" class=""
-										data-toggle="tooltip" title="Edit"> <i class="fa fa-check"></i></a>
-										<a href="javascript:void(0)" class="text-inverse"
-										title="Delete" data-toggle="tooltip"> <i
-											class="fa fa-trash"></i></a></td>
-								</tr>
-								<tr>
-									<td>34</td>
-									<td>John Deo</td>
-									<td><div id="sparkline3"></div></td>
-									<td><a href="javascript:void(0)" class=""
-										data-toggle="tooltip" title="Edit"> <i class="fa fa-check"></i></a>
-										<a href="javascript:void(0)" class="text-inverse"
-										title="Delete" data-toggle="tooltip"> <i
-											class="fa fa-trash"></i></a></td>
-								</tr>
-								<tr>
-									<td>15</td>
-									<td>Jay Soni</td>
-									<td><div id="sparkline4"></div></td>
-									<td><a href="javascript:void(0)" class=""
-										data-toggle="tooltip" title="Edit"> <i class="fa fa-check"></i></a>
-										<a href="javascript:void(0)" class="text-inverse"
-										title="Delete" data-toggle="tooltip"> <i
-											class="fa fa-trash"></i></a></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-6 col-md-12 col-sm-12 col-12">
-			<div class="card-box">
-				<div class="card-head">
-					<header>Todo List</header>
-					<button id="panel-button"
-						class="mdl-button mdl-js-button mdl-button--icon pull-right"
-						data-upgraded=",MaterialButton">
-						<i class="material-icons">more_vert</i>
-					</button>
-					<ul
-						class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-						data-mdl-for="panel-button">
-						<li class="mdl-menu__item"><i class="material-icons">assistant_photo</i>Action</li>
-						<li class="mdl-menu__item"><i class="material-icons">print</i>Another
-							action</li>
-						<li class="mdl-menu__item"><i class="material-icons">favorite</i>Something
-							else here</li>
-					</ul>
-				</div>
-				<div class="card-body ">
-					<ul class="to-do-list ui-sortable" id="sortable-todo">
-						<li class="clearfix">
-							<div class="todo-check pull-left">
-								<input type="checkbox" value="None" id="todo-check1"> <label
-									for="todo-check1"></label>
-							</div>
-							<p class="todo-title">Add fees details in system</p>
-							<div class="todo-actionlist pull-right clearfix">
-								<a href="#" class="todo-remove"><i class="fa fa-times"></i></a>
-							</div>
-						</li>
-						<li class="clearfix">
-							<div class="todo-check pull-left">
-								<input type="checkbox" value="None" id="todo-check2"> <label
-									for="todo-check2"></label>
-							</div>
-							<p class="todo-title">Announcement for holiday</p>
-							<div class="todo-actionlist pull-right clearfix">
-								<a href="#" class="todo-remove"><i class="fa fa-times"></i></a>
-							</div>
-						</li>
-						<li class="clearfix">
-							<div class="todo-check pull-left">
-								<input type="checkbox" value="None" id="todo-check3"> <label
-									for="todo-check3"></label>
-							</div>
-							<p class="todo-title">call bus driver</p>
-							<div class="todo-actionlist pull-right clearfix">
-								<a href="#" class="todo-remove"><i class="fa fa-times"></i></a>
-							</div>
-						</li>
-						<li class="clearfix">
-							<div class="todo-check pull-left">
-								<input type="checkbox" value="None" id="todo-check4"> <label
-									for="todo-check4"></label>
-							</div>
-							<p class="todo-title">School picnic</p>
-							<div class="todo-actionlist pull-right clearfix">
-								<a href="#" class="todo-remove"><i class="fa fa-times"></i></a>
-							</div>
-						</li>
-						<li class="clearfix">
-							<div class="todo-check pull-left">
-								<input type="checkbox" value="None" id="todo-check5"> <label
-									for="todo-check5"></label>
-							</div>
-							<p class="todo-title">Exam time table generate</p>
-							<div class="todo-actionlist pull-right clearfix">
-								<a href="#" class="todo-remove"><i class="fa fa-times"></i></a>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- start Payment Details -->
-	<div class="row">
-		<div class="col-md-12 col-sm-12">
-			<div class="card  card-box">
-				<div class="card-head">
-					<header>Payment Details</header>
-					<div class="tools">
-						<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
-						<a class="t-collapse btn-color fa fa-chevron-down"
-							href="javascript:;"></a> <a class="t-close btn-color fa fa-times"
-							href="javascript:;"></a>
-					</div>
-				</div>
-				<div class="card-body ">
-					<div class="table-wrap">
-						<div class="table-responsive">
-							<table class="table display product-overview mb-30"
-								id="support_table5">
-								<thead>
-									<tr>
-										<th>No</th>
-										<th>Name</th>
-										<th>Assigned Agent</th>
-										<th>Date Of Admit</th>
-										<th>Status</th>
-										<th>Branch</th>
-										<th>Edit</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>1</td>
-										<td>Jens Brincker</td>
-										<td>Kenny Josh</td>
-										<td>27/05/2016</td>
-										<td><span class="label label-sm label-success">paid</span>
-										</td>
-										<td>Mechanical</td>
-										<td><a href="javascript:void(0)" class=""
-											data-toggle="tooltip" title="Edit"><i class="fa fa-check"></i></a>
-											<a href="javascript:void(0)" class="text-inverse"
-											title="Delete" data-toggle="tooltip"><i
-												class="fa fa-trash"></i></a></td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td>Mark Hay</td>
-										<td>Mark</td>
-										<td>26/05/2017</td>
-										<td><span class="label label-sm label-warning">unpaid
-										</span></td>
-										<td>Science</td>
-										<td><a href="javascript:void(0)" class=""
-											data-toggle="tooltip" title="Edit"><i class="fa fa-check"></i></a>
-											<a href="javascript:void(0)" class="text-inverse"
-											title="Delete" data-toggle="tooltip"><i
-												class="fa fa-trash"></i></a></td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td>Anthony Davie</td>
-										<td>Cinnabar</td>
-										<td>21/05/2016</td>
-										<td><span class="label label-sm label-success ">paid</span>
-										</td>
-										<td>Commerce</td>
-										<td><a href="javascript:void(0)" class=""
-											data-toggle="tooltip" title="Edit"><i class="fa fa-check"></i></a>
-											<a href="javascript:void(0)" class="text-inverse"
-											title="Delete" data-toggle="tooltip"><i
-												class="fa fa-trash"></i></a></td>
-									</tr>
-									<tr>
-										<td>4</td>
-										<td>David Perry</td>
-										<td>Felix</td>
-										<td>20/04/2016</td>
-										<td><span class="label label-sm label-danger">unpaid</span>
-										</td>
-										<td>Mechanical</td>
-										<td><a href="javascript:void(0)" class=""
-											data-toggle="tooltip" title="Edit"><i class="fa fa-check"></i></a>
-											<a href="javascript:void(0)" class="text-inverse"
-											title="Delete" data-toggle="tooltip"><i
-												class="fa fa-trash"></i></a></td>
-									</tr>
-									<tr>
-										<td>5</td>
-										<td>Anthony Davie</td>
-										<td>Beryl</td>
-										<td>24/05/2016</td>
-										<td><span class="label label-sm label-success ">paid</span>
-										</td>
-										<td>M.B.A.</td>
-										<td><a href="javascript:void(0)" class=""
-											data-toggle="tooltip" title="Edit"><i class="fa fa-check"></i></a>
-											<a href="javascript:void(0)" class="text-inverse"
-											title="Delete" data-toggle="tooltip"><i
-												class="fa fa-trash"></i></a></td>
-									</tr>
-									<tr>
-										<td>6</td>
-										<td>Alan Gilchrist</td>
-										<td>Joshep</td>
-										<td>22/05/2016</td>
-										<td><span class="label label-sm label-warning ">unpaid</span>
-										</td>
-										<td>Science</td>
-										<td><a href="javascript:void(0)" class=""
-											data-toggle="tooltip" title="Edit"><i class="fa fa-check"></i></a>
-											<a href="javascript:void(0)" class="text-inverse"
-											title="Delete" data-toggle="tooltip"><i
-												class="fa fa-trash"></i></a></td>
-									</tr>
-									<tr>
-										<td>7</td>
-										<td>Mark Hay</td>
-										<td>Jayesh</td>
-										<td>18/06/2016</td>
-										<td><span class="label label-sm label-success ">paid</span>
-										</td>
-										<td>Commerce</td>
-										<td><a href="javascript:void(0)" class=""
-											data-toggle="tooltip" title="Edit"><i class="fa fa-check"></i></a>
-											<a href="javascript:void(0)" class="text-inverse"
-											title="Delete" data-toggle="tooltip"><i
-												class="fa fa-trash"></i></a></td>
-									</tr>
-									<tr>
-										<td>8</td>
-										<td>Sue Woodger</td>
-										<td>Sharma</td>
-										<td>17/05/2016</td>
-										<td><span class="label label-sm label-danger">unpaid</span>
-										</td>
-										<td>Mechanical</td>
-										<td><a href="javascript:void(0)" class=""
-											data-toggle="tooltip" title="Edit"><i class="fa fa-check"></i></a>
-											<a href="javascript:void(0)" class="text-inverse"
-											title="Delete" data-toggle="tooltip"><i
-												class="fa fa-trash"></i></a></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 </body>
 </html>
