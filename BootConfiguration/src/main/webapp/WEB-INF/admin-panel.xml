@@ -13,8 +13,8 @@
 		<put-attribute name="body" value="" />
 		<put-attribute name="footer"
 			value="/WEB-INF/demo/view/admin-module/common-pages/footer.jsp" />
-		<!-- <put-attribute name="chatSidebarContainer"
-			value="/WEB-INF/demo/view/admin-module/common-pages/chatSidebarContainer.jsp" /> -->
+		<!-- <put-attribute name="chatSidebarContainer" value="/WEB-INF/demo/view/admin-module/common-pages/chatSidebarContainer.jsp" 
+			/> -->
 	</definition>
 
 
@@ -26,5 +26,11 @@
 			value="/WEB-INF/demo/view/admin-module/dashboard.jsp" />
 	</definition>
 
+	<definition name="sampleForms"
+		extends="adminbase.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="body"
+			value="/WEB-INF/demo/view/admin-module/sampleForms/sampleForms.jsp" />
+	</definition>
 
 </tiles-definitions>

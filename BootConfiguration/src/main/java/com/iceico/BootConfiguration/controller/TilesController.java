@@ -21,4 +21,9 @@ public class TilesController {
 		return "adminDashboard";
 	}
 
+	@RequestMapping("/")
+	public String dashboard(ModelMap modelMap, Locale locale) {
+		return "adminDashboard";
+	}
+
 }

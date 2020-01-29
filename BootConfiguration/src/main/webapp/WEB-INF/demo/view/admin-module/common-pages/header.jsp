@@ -18,7 +18,8 @@
 						<a id="toggle-btn" href="#" class="menu-btn"><i
 							class="icon-bars"> </i></a><a href="index.html" class="navbar-brand">
 							<div class="brand-text d-none d-md-inline-block">
-								<!-- <span>Bootstrap </span> --><strong class="text-primary">CRUD PROJECT</strong>
+								<!-- <span>Bootstrap </span> -->
+								<strong class="text-primary">CRUD PROJECT</strong>
 							</div>
 						</a>
 					</div>
@@ -83,8 +84,9 @@
 							<ul aria-labelledby="notifications" class="dropdown-menu">
 								<li><a rel="nofollow" href="#" class="dropdown-item d-flex">
 										<div class="msg-profile">
-											<img src="img/avatar-1.jpg" alt="..."
-												class="img-fluid rounded-circle">
+											<img
+												src="${pageContext.request.contextPath }/static/img/avatar-1.jpg"
+												alt="..." class="img-fluid rounded-circle">
 										</div>
 										<div class="msg-body">
 											<h3 class="h5">Jason Doe</h3>
@@ -94,8 +96,9 @@
 								</a></li>
 								<li><a rel="nofollow" href="#" class="dropdown-item d-flex">
 										<div class="msg-profile">
-											<img src="img/avatar-2.jpg" alt="..."
-												class="img-fluid rounded-circle">
+											<img
+												src="${pageContext.request.contextPath }/static/img/avatar-2.jpg"
+												alt="..." class="img-fluid rounded-circle">
 										</div>
 										<div class="msg-body">
 											<h3 class="h5">Frank Williams</h3>
@@ -105,8 +108,9 @@
 								</a></li>
 								<li><a rel="nofollow" href="#" class="dropdown-item d-flex">
 										<div class="msg-profile">
-											<img src="img/avatar-3.jpg" alt="..."
-												class="img-fluid rounded-circle">
+											<img
+												src="${pageContext.request.contextPath }/static/img/avatar-3.jpg"
+												alt="..." class="img-fluid rounded-circle">
 										</div>
 										<div class="msg-body">
 											<h3 class="h5">Ashley Wood</h3>
@@ -124,15 +128,16 @@
 							rel="nofollow" data-target="#" href="#" data-toggle="dropdown"
 							aria-haspopup="true" aria-expanded="false"
 							class="nav-link language dropdown-toggle"><img
-								src="/static/img/flags/16/GB.png" alt="English"><span
-								class="d-none d-sm-inline-block">English</span></a>
+								src="${pageContext.request.contextPath }/static/img/flags/16/GB.png"
+								alt="English"><span class="d-none d-sm-inline-block">English</span></a>
 							<ul aria-labelledby="languages" class="dropdown-menu">
 								<li><a rel="nofollow" href="#" class="dropdown-item"> <img
-										src="img/flags/16/DE.png" alt="English" class="mr-2"><span>German</span>
+										src="${pageContext.request.contextPath }/static/img/flags/16/DE.png"
+										alt="English" class="mr-2"><span>German</span>
 								</a></li>
 								<li><a rel="nofollow" href="#" class="dropdown-item"> <img
-										src="img/flags/16/FR.png" alt="English" class="mr-2"><span>French
-									</span>
+										src="${pageContext.request.contextPath }/static/img/flags/16/FR.png"
+										alt="English" class="mr-2"><span>French </span>
 								</a></li>
 							</ul></li>
 						<!-- Log out-->
