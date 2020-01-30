@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.GetMapping;
  *
  */
 @Controller
-public class samplesController {
+public class SamplesController {
 
-	public samplesController() {
-		// TODO Auto-generated constructor stub
+	public SamplesController() {
+		
 	}
 
 	@GetMapping("/admin/sample/forms")
