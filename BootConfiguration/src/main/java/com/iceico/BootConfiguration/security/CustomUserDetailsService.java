@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.iceico.BootConfiguration.model.User;
 import com.iceico.BootConfiguration.model.UserProfile;
-import com.iceico.BootConfiguration.Service.UserService;
+import com.iceico.BootConfiguration.service.UserService;
 
 @Service("customUserDetailsService")
 public class CustomUserDetailsService implements UserDetailsService {

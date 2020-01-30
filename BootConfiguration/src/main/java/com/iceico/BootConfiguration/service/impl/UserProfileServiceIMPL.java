@@ -1,4 +1,4 @@
-package com.iceico.BootConfiguration.Service.impl;
+package com.iceico.BootConfiguration.service.impl;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.iceico.BootConfiguration.dao.UserProfileDao;
 import com.iceico.BootConfiguration.model.UserProfile;
-import com.iceico.BootConfiguration.Service.UserProfileService;
+import com.iceico.BootConfiguration.service.UserProfileService;
 
 @Service("userProfileService")
 @Transactional

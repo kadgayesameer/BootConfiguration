@@ -22,8 +22,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.iceico.BootConfiguration.model.User;
 import com.iceico.BootConfiguration.model.UserProfile;
-import com.iceico.BootConfiguration.Service.UserProfileService;
-import com.iceico.BootConfiguration.Service.UserService;
+import com.iceico.BootConfiguration.service.UserProfileService;
+import com.iceico.BootConfiguration.service.UserService;
 
 @Controller
 public class UserController {

@@ -1,4 +1,4 @@
-package com.iceico.BootConfiguration.Service.impl;
+package com.iceico.BootConfiguration.service.impl;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.iceico.BootConfiguration.dao.UserDao;
 import com.iceico.BootConfiguration.model.User;
-import com.iceico.BootConfiguration.Service.UserService;
+import com.iceico.BootConfiguration.service.UserService;
 
 /**
  * @author PRAFUL MESHRAM

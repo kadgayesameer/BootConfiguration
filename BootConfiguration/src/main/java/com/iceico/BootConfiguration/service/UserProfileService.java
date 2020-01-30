@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.iceico.BootConfiguration.Service;
+package com.iceico.BootConfiguration.service;
 
 import java.util.List;
 
