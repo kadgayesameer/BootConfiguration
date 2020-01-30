@@ -7,7 +7,7 @@ import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 
-import com.iceico.BootConfiguration.Dao.UserProfileDao;
+import com.iceico.BootConfiguration.dao.UserProfileDao;
 import com.iceico.BootConfiguration.model.UserProfile;
 
 @Repository("userProfileDao")

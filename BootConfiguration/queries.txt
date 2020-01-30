@@ -1,0 +1,12 @@
+INSERT INTO tab_app_user( id, description, email, first_name, last_name, mobile_number, password, sso_id ) VALUES ( 1, 'ABC', 'admin@gmail.com', 'Admin', 'Admin', '0123456789', '$2a$10$xKJ4XNL6TrUfaCPue983T.m5MOmVlzM2bpDzSghrAklCJpcQ954ku', 'admin' );
+
+ 
+INSERT INTO tab_user_profile( id, type ) VALUES ( 1, 'ADMIN' ); 
+INSERT INTO tab_user_profile( id, type ) VALUES ( 2, 'USER' ); 
+INSERT INTO tab_user_profile( id, type ) VALUES ( 3, 'TEACHER' ); 
+INSERT INTO tab_user_profile( id, type ) VALUES ( 4, 'STUDENT' ); 
+
+INSERT INTO tab_app_user_user_profile( user_id, user_profile_id ) VALUES ( 1, 1 ); 
+
+
+INSERT INTO `tab_financial_year` VALUES (1,'admin','2020-01-15 20:32:33','admin','2020-01-15 20:32:33',1,'2020-2021');
