@@ -24,7 +24,6 @@ public class SamplesController {
 	public String samples(ModelMap modelMap, Locale locale) {
 
 		return "sampleForms";
-
 	}
 
 }
