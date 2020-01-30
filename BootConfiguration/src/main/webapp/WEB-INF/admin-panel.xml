@@ -3,6 +3,7 @@
        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
+
 	<definition name="adminbase.definition"
 		template="/WEB-INF/demo/layout/admin-layout.jsp">
 		<put-attribute name="title" value="" />
@@ -17,6 +18,17 @@
 			/> -->
 	</definition>
 
+	<!-- LOGIN PAGE -->
+	<definition name="welcome"
+		template="/WEB-INF/demo/view/login-module/signIn.jsp">
+	</definition>
+
+	<!-- REGISTRATION PAGE -->
+	<definition name="register"
+		template="/WEB-INF/demo/view/login-module/userRegistration.jsp">
+	</definition>
+
+
 
 	<!-- DASHBOARD PAGE -->
 	<definition name="adminDashboard"
@@ -26,11 +38,12 @@
 			value="/WEB-INF/demo/view/admin-module/dashboard.jsp" />
 	</definition>
 
-	<definition name="sampleForms"
+	<definition name="sampleLogin"
 		extends="adminbase.definition">
 		<put-attribute name="title" value="Dashboard" />
 		<put-attribute name="body"
-			value="/WEB-INF/demo/view/admin-module/sampleForms/sampleForms.jsp" />
+			value="/WEB-INF/demo/view/login-module/login.jsp" />
 	</definition>
+
 
 </tiles-definitions>
