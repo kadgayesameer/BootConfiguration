@@ -11,9 +11,8 @@
 <body>
 	<!-- header -->
 	<!-- navbar-->
-	<!-- <div id="header"
-		style="position: absolute; top: 0px; left: 0px; height: 200px; right: 0px;"> -->
-
+	<div id="header"
+		style="position: absolute; top: 0px; left: 0px; height: 200px; right: 0px;">
 		<header class="header">
 			<nav class="navbar">
 				<div class="container-fluid">
@@ -23,7 +22,7 @@
 							<a id="toggle-btn" href="#" class="menu-btn"><i
 								class="icon-bars"> </i></a><a href="index.html" class="navbar-brand">
 								<div class="brand-text d-none d-md-inline-block">
-									<span>Bootstrap </span><strong class="text-primary">Dashboard</strong>
+									<!-- <span>Bootstrap </span> --><strong class="text-primary">CRUD PROJECT</strong>
 								</div>
 							</a>
 						</div>
@@ -89,7 +88,7 @@
 									<li><a rel="nofollow" href="#"
 										class="dropdown-item d-flex">
 											<div class="msg-profile">
-												<img src="img/avatar-1.jpg" alt="..."
+												<img src="${pageContext.request.contextPath }/static/img/avatar-1.jpg" alt="..."
 													class="img-fluid rounded-circle">
 											</div>
 											<div class="msg-body">
@@ -101,7 +100,7 @@
 									<li><a rel="nofollow" href="#"
 										class="dropdown-item d-flex">
 											<div class="msg-profile">
-												<img src="img/avatar-2.jpg" alt="..."
+												<img src="${pageContext.request.contextPath }/static/img/avatar-2.jpg" alt="..."
 													class="img-fluid rounded-circle">
 											</div>
 											<div class="msg-body">
@@ -113,7 +112,7 @@
 									<li><a rel="nofollow" href="#"
 										class="dropdown-item d-flex">
 											<div class="msg-profile">
-												<img src="img/avatar-3.jpg" alt="..."
+												<img src="${pageContext.request.contextPath }/static/img/avatar-3.jpg" alt="..."
 													class="img-fluid rounded-circle">
 											</div>
 											<div class="msg-body">
@@ -136,11 +135,14 @@
 									class="d-none d-sm-inline-block">English</span></a>
 								<ul aria-labelledby="languages" class="dropdown-menu">
 									<li><a rel="nofollow" href="#" class="dropdown-item">
-											<img src="img/flags/16/DE.png" alt="English" class="mr-2"><span>German</span>
+											<img
+											src="${pageContext.request.contextPath }/static/img/flags/16/DE.png"
+											alt="English" class="mr-2"><span>German</span>
 									</a></li>
 									<li><a rel="nofollow" href="#" class="dropdown-item">
-											<img src="img/flags/16/FR.png" alt="English" class="mr-2"><span>French
-										</span>
+											<img
+											src="${pageContext.request.contextPath }/static/img/flags/16/FR.png"
+											alt="English" class="mr-2"><span>French </span>
 									</a></li>
 								</ul></li>
 							<!-- Log out-->
@@ -154,6 +156,6 @@
 				</div>
 			</nav>
 		</header>
-	<!-- </div> -->
+	</div>
 </body>
 </html>
