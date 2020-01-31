@@ -98,7 +98,7 @@
 	<section class="dashboard-header section-padding">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-md-stretch">
-				To Do List
+				<!-- To Do List -->
 				<div class="col-lg-3 col-md-6">
 					<div class="card to-do">
 						<h2 class="display h4">To do List</h2>
@@ -366,7 +366,7 @@
 										<div class="feed d-flex justify-content-between">
 											<div class="feed-body d-flex justify-content-between">
 												<a href="#" class="feed-profile"><img
-													src="img/avatar-5.jpg" alt="person"
+													src="${pageContext.request.contextPath }/static/img/avatar-5.jpg" alt="person"
 													class="img-fluid rounded-circle"></a>
 												<div class="content">
 													<strong>Aria Smith</strong><small>Posted a new blog
@@ -385,7 +385,7 @@
 										<div class="feed d-flex justify-content-between">
 											<div class="feed-body d-flex justify-content-between">
 												<a href="#" class="feed-profile"><img
-													src="img/avatar-2.jpg" alt="person"
+													src="${pageContext.request.contextPath }/static/img/avatar-2.jpg" alt="person"
 													class="img-fluid rounded-circle"></a>
 												<div class="content">
 													<strong>Frank Williams</strong><small>Posted a new
@@ -410,7 +410,7 @@
 										<div class="feed d-flex justify-content-between">
 											<div class="feed-body d-flex justify-content-between">
 												<a href="#" class="feed-profile"><img
-													src="img/avatar-3.jpg" alt="person"
+													src="${pageContext.request.contextPath }/static/img/avatar-3.jpg" alt="person"
 													class="img-fluid rounded-circle"></a>
 												<div class="content">
 													<strong>Ashley Wood</strong><small>Posted a new
@@ -429,7 +429,7 @@
 										<div class="feed d-flex justify-content-between">
 											<div class="feed-body d-flex justify-content-between">
 												<a href="#" class="feed-profile"><img
-													src="img/avatar-1.jpg" alt="person"
+													src="${pageContext.request.contextPath }/static/img/avatar-1.jpg" alt="person"
 													class="img-fluid rounded-circle"></a>
 												<div class="content">
 													<strong>Jason Doe</strong><small>Posted a new blog
@@ -459,7 +459,7 @@
 										<div class="feed d-flex justify-content-between">
 											<div class="feed-body d-flex justify-content-between">
 												<a href="#" class="feed-profile"><img
-													src="img/avatar-6.jpg" alt="person"
+													src="${pageContext.request.contextPath }/static/img/avatar-6.jpg" alt="person"
 													class="img-fluid rounded-circle"></a>
 												<div class="content">
 													<strong>Sam Martinez</strong><small>Posted a new
@@ -481,7 +481,7 @@
 					<!-- Daily Feed Widget End -->
 				</div>
 				<div class="col-lg-4 col-md-6">
-					Recent Activities Widget
+					<!-- Recent Activities Widget -->
 					<div id="recent-activities-wrapper" class="card updates activities">
 						<div id="activites-header"
 							class="card-header d-flex justify-content-between align-items-center">

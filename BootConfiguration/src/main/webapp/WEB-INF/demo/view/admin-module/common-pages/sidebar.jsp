@@ -15,24 +15,31 @@
 				<!-- User Info-->
 				<div class="sidenav-header-inner text-center">
 					<img
-						src="${pageContext.request.contextPath }/static/img/avatar-7.jpg"
-						alt="person" class="img-fluid rounded-circle">
-					<h2 class="h5">Nathan Andrews</h2>
-					<span>Web Developer</span>
+						src="${pageContext.request.contextPath }/static/img/sameer/compLogo.png"
+						alt="person" class="img-fluid rounded-circle"
+						style="width: 100px; height: 80px;">
+					<h2 class="h5">PROJECT</h2>
+					<!-- <span>Web Developer</span> -->
 				</div>
 				<!-- Small Brand information, appears on minimized sidebar-->
 				<div class="sidenav-header-logo">
-					<a href="index.html" class="brand-small text-center"> <strong>B</strong><strong
-						class="text-primary">D</strong></a>
+					<a href="${pageContext.request.contextPath }/"
+						class="brand-small text-center"> <img
+						src="${pageContext.request.contextPath }/static/img/sameer/compLogo.png"
+						alt="person" class="img-fluid rounded-circle"
+						style="width: 40px; height: 40px;"> <!-- <strong>C</strong><strong
+						class="text-primary">P</strong> --></a>
 				</div>
 			</div>
 			<!-- Sidebar Navigation Menus-->
 			<div class="main-menu">
 				<h5 class="sidenav-heading">Main</h5>
 				<ul id="side-main-menu" class="side-menu list-unstyled">
-					<li><a href="${pageContext.request.contextPath }/"> <i class="icon-home"></i>Home
+					<li><a href="${pageContext.request.contextPath }/"> <i
+							class="icon-home"></i>Home
 					</a></li>
 					<li><a href="#exampledropdownDropdown" aria-expanded="false"
+
 						data-toggle="collapse"> <i class="icon-interface-windows"></i>Mapping Dropdown
 					</a>
 						<ul id="exampledropdownDropdown" class="collapse list-unstyled ">
@@ -49,11 +56,27 @@
 						</ul>
 					</li>
 					<%-- <li><a href="${pageContext.request.contextPath }/sample/login">
+
+						data-toggle="collapse"> <i class="icon-interface-windows"></i>Task
+							Dropdown
+					</a>
+						<ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+							<li><a
+								href="${pageContext.request.contextPath }/admin/students">Student</a></li>
+							<li><a
+								href="${pageContext.request.contextPath }/admin/category">Category</a></li>
+							<li><a
+								href="${pageContext.request.contextPath }/admin/caste">Caste</a></li>
+						</ul></li>
+					<li><a href="${pageContext.request.contextPath }/sample/login">
+
 							<i class="icon-interface-windows"></i>Login page
 					</a></li>
 					<li><a href="#"> <i class="icon-mail"></i>Demo
 							<div class="badge badge-warning">6 New</div></a></li>
-					<li><a href="${pageContext.request.contextPath }/admin/students"> <i class="icon-form"></i>Forms
+					<li><a
+						href="${pageContext.request.contextPath }/admin/students"> <i
+							class="icon-form"></i>Forms
 					</a></li>
 					<li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Charts
 					</a></li>
