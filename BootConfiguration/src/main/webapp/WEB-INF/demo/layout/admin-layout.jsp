@@ -48,10 +48,10 @@
 		<tiles:insertAttribute name="sidebar"></tiles:insertAttribute>
 		<tiles:insertAttribute name="header"></tiles:insertAttribute>
 
-
-
-		<tiles:insertAttribute name="body"></tiles:insertAttribute>
-
+		<!-- <div id="content"
+			style="position: absolute; top: 67px; bottom: 67px; left: 0px; right: 0px; overflow: auto;"> -->
+			<tiles:insertAttribute name="body"></tiles:insertAttribute>
+		<!-- </div> -->
 		<%-- <tiles:insertAttribute name="chatSidebarContainer"></tiles:insertAttribute> --%>
 
 		<tiles:insertAttribute name="footer"></tiles:insertAttribute>

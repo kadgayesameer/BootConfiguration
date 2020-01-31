@@ -60,7 +60,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		/* http.requiresChannel().anyRequest().requiresSecure(); */
 
 		http.authorizeRequests().antMatchers("/static/**", "/forgot/password/**", "/getImage/**", "/register/**",
-				"/caste/list**", "/subcaste/list**", "/upload/file", "/download/**").permitAll();
+				"/upload/file", "/download/**").permitAll();
 
 		http.authorizeRequests().antMatchers("/anonymous*").anonymous().antMatchers("/login").permitAll()
 				.antMatchers("/admin/**").access("hasRole('ADMIN')").antMatchers("/teacher/**")
@@ -74,7 +74,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.deleteCookies("JSESSIONID").invalidateHttpSession(true).and().sessionManagement()
 				.invalidSessionUrl("/login").maximumSessions(20).and().sessionFixation().migrateSession().and().csrf()
 				.disable();
-
 	}
 
 	@Bean
