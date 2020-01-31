@@ -45,5 +45,25 @@
 			value="/WEB-INF/demo/view/login-module/login.jsp" />
 	</definition>
 
+	<definition name="studentURL"
+		extends="adminbase.definition">
+		<put-attribute name="title" value="Student" />
+		<put-attribute name="body"
+			value="/WEB-INF/demo/view/admin-module/student.jsp" />
+	</definition>
+
+	<definition name="category"
+		extends="adminbase.definition">
+		<put-attribute name="title" value="Category" />
+		<put-attribute name="body"
+			value="/WEB-INF/demo/view/admin-module/category.jsp" />
+	</definition>
+
+	<definition name="caste"
+		extends="adminbase.definition">
+		<put-attribute name="title" value="Caste" />
+		<put-attribute name="body"
+			value="/WEB-INF/demo/view/admin-module/caste.jsp" />
+	</definition>
 
 </tiles-definitions>
