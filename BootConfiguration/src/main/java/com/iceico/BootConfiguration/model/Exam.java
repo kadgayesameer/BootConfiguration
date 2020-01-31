@@ -21,24 +21,24 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
  * Created Date : 21/01/2020
  */
 @Entity
-@Table(name = "tab_caste")
-public class Caste implements Serializable {
+@Table(name = "tab_exam")
+public class Exam implements Serializable {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -2094619891814575883L;
 
-	public Caste() {
+	public Exam() {
 
 	}
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "caste_id")
-	private Long casteId;
+	@Column(name = "exam_id")
+	private Long examId;
 	
-	@Column(name = "caste_name")
-	private String casteName;
+	@Column(name = "marks")
+	private Double marks;
 	
 	@OneToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "studentId", insertable = true, nullable = true, updatable = true)
@@ -60,30 +60,31 @@ public class Caste implements Serializable {
 	}
 
 	/**
-	 * @return the casteId
+	 * @return the examId
 	 */
-	public Long getCasteId() {
-		return casteId;
+	public Long getExamId() {
+		return examId;
 	}
 
 	/**
-	 * @param casteId the casteId to set
+	 * @param examId the examId to set
 	 */
-	public void setCasteId(Long casteId) {
-		this.casteId = casteId;
+	public void setExamId(Long examId) {
+		this.examId = examId;
 	}
 
 	/**
-	 * @return the casteName
+	 * @return the marks
 	 */
-	public String getCasteName() {
-		return casteName;
+	public Double getMarks() {
+		return marks;
 	}
 
 	/**
-	 * @param casteName the casteName to set
+	 * @param marks the marks to set
 	 */
-	public void setCasteName(String casteName) {
-		this.casteName = casteName;
+	public void setMarks(Double marks) {
+		this.marks = marks;
 	}
+	
 }

@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.iceico.BootConfiguration.exceptions.ResourceNotFoundException;
 import com.iceico.BootConfiguration.model.Student;
-import com.iceico.BootConfiguration.service.CasteService;
+import com.iceico.BootConfiguration.service.ExamService;
 import com.iceico.BootConfiguration.service.CategoryService;
 import com.iceico.BootConfiguration.service.StudentService;
 
@@ -39,7 +39,7 @@ public class StudentController {
 	private StudentService studentService;
 
 	@Autowired
-	private CasteService casteService;
+	private ExamService examService;
 
 	/**
 	 * 
@@ -52,7 +52,7 @@ public class StudentController {
 	public String adminDashboard(ModelMap modelMap, Locale locale) throws ResourceNotFoundException, ParseException {
 		modelMap.addAttribute("categoryList", this.categoryService.getCategoryList());
 		modelMap.addAttribute("studentList", this.studentService.getStudentList());
-		modelMap.addAttribute("casteList", this.casteService.getCasteList());
+		modelMap.addAttribute("examList", this.examService.getExamList());
 		modelMap.addAttribute("student", new Student());
 		modelMap.addAttribute("user", this.getPrincipal());
 
@@ -78,11 +78,10 @@ public class StudentController {
 			throws ResourceNotFoundException {
 		modelMap.addAttribute("categoryList", this.categoryService.getCategoryList());
 		modelMap.addAttribute("studentList", this.studentService.getStudentList());
-		modelMap.addAttribute("casteList", this.casteService.getCasteList());
 		modelMap.addAttribute("student", this.studentService.getStudentById(studentId));
 		modelMap.addAttribute("edit", true);
 		modelMap.addAttribute("user", this.getPrincipal());
-		return "redirect:/admin/students";
+		return "studentURL";
 	}
 
 	@GetMapping("/admin/student/delete/{id}")

@@ -42,11 +42,11 @@
 		<div class="container-fluid">
 			<!-- Page Header-->
 			<header>
-				<h1 class="h3 display">Student Master</h1>
+				<h1 class="h3 display">STUDENT MASTER</h1>
 			</header>
 			<div class="row">
 				<div class="col-lg-4">
-					<div class="card">
+					<div class="card border border-secondary">
 						<div class="card-header d-flex align-items-center">
 							<h4>Save Student</h4>
 						</div>
@@ -75,15 +75,6 @@
 										</form:select>
 										<form:errors path="category" class="errors" />
 									</div>
-									<div class="col-md-12 col-sm-12 col-lg-12 col-12">
-										<form:label path="caste"> Caste </form:label>
-										<form:select class="form-control" name="caste" 
-											path="caste" id="caste"
-											itemLabel="casteName" items="${ casteList }"
-											itemValue="casteId">
-										</form:select>
-										<form:errors path="caste" class="errors" />
-									</div>
 								</div>
 								<div class="row form-group">
 									<div class="col-md-12 text-right">
@@ -98,7 +89,7 @@
 					</div>
 				</div>
 				<div class="col-lg-8">
-					<div class="card">
+					<div class="card border border-secondary">
 						<div class="card-header">
 							<h4>Student List</h4>
 						</div>
@@ -110,23 +101,26 @@
 											<th>Sr No</th>
 											<th>Student Name</th>
 											<th>Category Name</th>
-											<th>Caste Name</th>
+											<th>Exam Marks</th>
 											<th>Action</th>
 										</tr>
 									</thead>
 									<tbody>
 										<c:forEach var="stud" items="${ studentList }" varStatus="ind">
 											<tr>
-											<td>${ind.index+1 }</td>
+											<td>${ ind.index+1 }</td>
 											<td>${ stud.studentName }</td>
 											<td>${ stud.category.categoryName }</td>
-											<td>${ stud.caste.casteName }</td>
+											<td>${ stud.exam.marks }</td>
 											<td class="valigntop">
 												<a data-toggle="tooltip" title="Edit" href="<c:url value='/admin/student/edit/${ stud.studentId }' />">
-													<i style="width: 27px; height: 27px;" class="text-center p-2 rounded-circle bg-success fa fa-edit"></i>
+													<i style="width: 27px; height: 27px;" class="text-center text-white p-2 rounded-circle bg-success fa fa-edit"></i>
+												</a>
+												<a data-toggle="tooltip" title="Exam" href="<c:url value='/admin/exam/${ stud.studentId }' />">
+													<i style="width: 27px; height: 27px;" class="text-center text-white p-2 rounded-circle bg-success fa fa-file-text"></i>
 												</a>
 												<a data-toggle="tooltip" title="Delete" href="<c:url value='/admin/student/delete/${ stud.studentId }' />">
-													<i style="width: 27px; height: 27px;" class="text-center p-2 rounded-circle bg-success fa fa-trash"></i>
+													<i style="width: 27px; height: 27px;" class="text-center text-white p-2 rounded-circle bg-success fa fa-trash"></i>
 												</a>
 											</td>
 											<tr>

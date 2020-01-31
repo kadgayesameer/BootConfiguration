@@ -6,7 +6,7 @@ package com.iceico.BootConfiguration.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.iceico.BootConfiguration.model.Caste;
+import com.iceico.BootConfiguration.model.Exam;
 
 /**
  * @author Rajat
@@ -15,6 +15,6 @@ import com.iceico.BootConfiguration.model.Caste;
  * Created Date : 30/12/2019
  */
 @Repository
-public interface CasteRepository extends JpaRepository<Caste, Long> {
+public interface ExamRepository extends JpaRepository<Exam, Long> {
 
 }

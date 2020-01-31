@@ -52,20 +52,20 @@ public class Student implements Serializable {
 	
 	@JsonIgnore
 	@OneToOne(mappedBy = "student", fetch = FetchType.LAZY)
-	private Caste caste;
+	private Exam exam;
 	
 	/**
-	 * @return the caste
+	 * @return the exam
 	 */
-	public Caste getCaste() {
-		return caste;
+	public Exam getExam() {
+		return exam;
 	}
 
 	/**
-	 * @param caste the caste to set
+	 * @param exam the exam to set
 	 */
-	public void setCaste(Caste caste) {
-		this.caste = caste;
+	public void setExam(Exam exam) {
+		this.exam = exam;
 	}
 
 	/**

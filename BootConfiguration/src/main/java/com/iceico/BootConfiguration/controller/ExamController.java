@@ -20,8 +20,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.iceico.BootConfiguration.exceptions.ResourceNotFoundException;
-import com.iceico.BootConfiguration.model.Caste;
-import com.iceico.BootConfiguration.service.CasteService;
+import com.iceico.BootConfiguration.model.Exam;
+import com.iceico.BootConfiguration.service.ExamService;
+import com.iceico.BootConfiguration.service.StudentService;
 import com.iceico.BootConfiguration.service.CategoryService;
 
 /**
@@ -29,10 +30,13 @@ import com.iceico.BootConfiguration.service.CategoryService;
  *
  */
 @Controller
-public class CasteController {
+public class ExamController {
 
 	@Autowired
-	private CasteService casteService;
+	private ExamService examService;
+	
+	@Autowired
+	private StudentService studentService;
 	
 	@Autowired
 	private CategoryService categoryService;
@@ -40,56 +44,57 @@ public class CasteController {
 	/**
 	 * 
 	 */
-	public CasteController() {
-		// TODO Auto-generated constructor stub
+	public ExamController() {
+
 	}
 	
 	
-	@RequestMapping("/admin/caste")
-	public String adminDashboard(ModelMap modelMap, Locale locale) throws ResourceNotFoundException, ParseException {
-		modelMap.addAttribute("categoryList", this.categoryService.getCategoryList());
-		modelMap.addAttribute("casteList", this.casteService.getCasteList());
-		modelMap.addAttribute("caste", new Caste());
+	@RequestMapping("/admin/exam/{id}")
+	public String adminDashboard(@PathVariable("id") Long studentId, ModelMap modelMap, Locale locale) throws ResourceNotFoundException, ParseException {
+		System.out.println("====>"+this.studentService.getStudentById(studentId).getExam());
+		modelMap.addAttribute("marksList", this.examService.getExamList());
+		modelMap.addAttribute("studentId", studentId);
+		modelMap.addAttribute("exam", (this.studentService.getStudentById(studentId).getExam()==null)?new Exam():this.studentService.getStudentById(studentId).getExam());
 		modelMap.addAttribute("user", this.getPrincipal());
 
-		return "caste";
+		return "exam";
 	}
 
-	@RequestMapping("/admin/caste/save")
-	public String saveCaste(  @ModelAttribute("caste") @Valid Caste caste,
+	@RequestMapping("/admin/exam/save")
+	public String saveExam(  @ModelAttribute("exam") @Valid Exam exam,
 		BindingResult bindingResult, ModelMap modelMap, Locale locale) {
 
 		if (bindingResult.hasErrors()) {
-			modelMap.addAttribute("casteList", this.categoryService.getCategoryList());
+			modelMap.addAttribute("examList", this.examService.getExamList());
 			modelMap.addAttribute("user", this.getPrincipal());
-			return "caste";
+			return "student";
 		} else {
-			this.casteService.saveCaste(caste);
+			this.examService.saveExam(exam);
 			modelMap.addAttribute("user", this.getPrincipal());
-			return "redirect:/admin/caste";
+			return "redirect:/admin/students";
 		}
 	}
 	
-	@GetMapping("/admin/caste/edit/{id}")
-	public String editCaste(@PathVariable("id") Long casteId, ModelMap modelMap, Locale locale)
+	@GetMapping("/admin/exam/edit/{id}")
+	public String editExam(@PathVariable("id") Long examId, ModelMap modelMap, Locale locale)
 			throws ResourceNotFoundException {
 		modelMap.addAttribute("categoryList", this.categoryService.getCategoryList());
-		modelMap.addAttribute("casteList", this.casteService.getCasteList());
-		modelMap.addAttribute("caste", this.casteService.getCasteById(casteId));
+		modelMap.addAttribute("examList", this.examService.getExamList());
+		modelMap.addAttribute("exam", this.examService.getExamById(examId));
 		modelMap.addAttribute("edit", true);
 		modelMap.addAttribute("user", this.getPrincipal());
-		return "caste";
+		return "exam";
 	}
 	
-	@GetMapping("/admin/caste/delete/{id}")
-	public String deleteCaste(@PathVariable("id") Long casteId, ModelMap modelMap, Locale locale)
+	@GetMapping("/admin/exam/delete/{id}")
+	public String deleteExam(@PathVariable("id") Long examId, ModelMap modelMap, Locale locale)
 			throws ResourceNotFoundException {
 		modelMap.addAttribute("categoryList", this.categoryService.getCategoryList());
-		modelMap.addAttribute("casteList", this.casteService.getCasteList());
-		modelMap.addAttribute("caste", new Caste());
-		this.casteService.deleteCaste(casteId);
+		modelMap.addAttribute("examList", this.examService.getExamList());
+		modelMap.addAttribute("exam", new Exam());
+		this.examService.deleteExam(examId);
 		modelMap.addAttribute("user", this.getPrincipal());
-		return "caste";
+		return "exam";
 	}
 	
 	private String getPrincipal() {

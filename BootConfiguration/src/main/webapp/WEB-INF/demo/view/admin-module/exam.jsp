@@ -8,7 +8,6 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Bootstrap Dashboard by Bootstrapious.com</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -42,28 +41,38 @@
 		<div class="container-fluid">
 			<!-- Page Header-->
 			<header>
-				<h1 class="h3 display">Caste Master</h1>
+				<h1 class="h3 display">Exam Master</h1>
 			</header>
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="card">
 						<div class="card-header d-flex align-items-center">
-							<h4>Save Caste</h4>
+							<h4>Save Exam</h4>
 						</div>
 						<div class="card-body">
 							<form:form
-								action="${pageContext.request.contextPath }/admin/caste/save"
-								modelAttribute="caste" name="caste" id="caste" method="post">
+								action="${pageContext.request.contextPath }/admin/exam/save"
+								modelAttribute="exam" name="exam" id="exam" method="post">
 
-								<form:hidden path="casteId" />
+								<form:hidden path="examId" />
 
 								<div class="row form-group">
 									<div class="col-md-12 col-sm-12 col-lg-12 col-12">
-										<form:label path="casteName"> Caste Name </form:label>
-										<form:input path="casteName" name="casteName" id="casteName"
-											class="form-control" placeholder="Enter Caste Name"
+										<form:label path="student">Student ID</form:label>
+										<form:input path="student" name="student" id="student"
+											class="form-control" value="${studentId}"
 											required="required" />
-										<form:errors path="casteName"></form:errors>
+										<form:errors path="student"></form:errors>
+									</div>
+								</div>
+
+								<div class="row form-group">
+									<div class="col-md-12 col-sm-12 col-lg-12 col-12">
+										<form:label path="marks"> Marks </form:label>
+										<form:input path="marks" name="marks" id="marks"
+											class="form-control" placeholder="Enter Marks"
+											required="required" value="${ exam.marks }" />
+										<form:errors path="marks"></form:errors>
 									</div>
 								</div>
 
@@ -82,7 +91,7 @@
 				<div class="col-lg-8">
 					<div class="card">
 						<div class="card-header">
-							<h4>Caste List</h4>
+							<h4>Marks List</h4>
 						</div>
 						<div class="card-body">
 							<div class="table-responsive table-striped">
@@ -90,26 +99,16 @@
 									<thead>
 										<tr>
 											<th>Sr No</th>
-											<th>Caste Name</th>
-											<th>Action</th>
+											<th>Student Name</th>
+											<th>Marks Name</th>
 										</tr>
 									</thead>
 									<tbody>
-										<c:forEach var="cas" items="${ casteList }"
-											varStatus="ind">
+										<c:forEach var="cas" items="${ marksList }" varStatus="ind">
 											<tr>
-												<td>${ind.index+1 }</td>
-												<td>${ cas.casteName }</td>
-												<td class="valigntop"><a data-toggle="tooltip"
-													title="Edit"
-													href="<c:url value='/admin/category/edit/${ cas.casteId }' />"><i
-														style="width: 27px; height: 27px;"
-														class="text-center text-white p-2 rounded-circle bg-success fa fa-edit"></i></a>
-													<a data-toggle="tooltip" title="Delete"
-													href="<c:url value='/admin/category/delete/${ cas.casteId }' />"><i
-														style="width: 27px; height: 27px;"
-														class="text-center text-white p-2 rounded-circle bg-success fa fa-trash"></i></a>
-												</td>
+												<td>${ ind.index+1 }</td>
+												<td>${ cas.student.studentName }</td>
+												<td>${ cas.marks }</td>
 											</tr>
 										</c:forEach>
 									</tbody>

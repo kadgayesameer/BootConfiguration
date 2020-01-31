@@ -59,11 +59,11 @@
 			value="/WEB-INF/demo/view/admin-module/category.jsp" />
 	</definition>
 
-	<definition name="caste"
+	<definition name="exam"
 		extends="adminbase.definition">
-		<put-attribute name="title" value="Caste" />
+		<put-attribute name="title" value="Exam" />
 		<put-attribute name="body"
-			value="/WEB-INF/demo/view/admin-module/caste.jsp" />
+			value="/WEB-INF/demo/view/admin-module/exam.jsp" />
 	</definition>
 
 </tiles-definitions>
