@@ -6,7 +6,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Bootstrap Dashboard by Bootstrapious.com</title>
+<title>DREAM PROJECT</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -49,7 +49,7 @@
 		<tiles:insertAttribute name="header"></tiles:insertAttribute>
 
 		<div id="content"
-			style="position: absolute; top: 67px; bottom: 67px; left: 0px; right: 0px; overflow: auto;">
+			style="position: absolute; top: 67px; bottom: 40px; left: 0px; right: 0px; overflow: auto;">
 			<tiles:insertAttribute name="body"></tiles:insertAttribute>
 		</div>
 		<%-- <tiles:insertAttribute name="chatSidebarContainer"></tiles:insertAttribute> --%>

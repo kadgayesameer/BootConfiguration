@@ -18,16 +18,16 @@
 						src="${pageContext.request.contextPath }/static/img/sameer/compLogo.png"
 						alt="person" class="img-fluid rounded-circle"
 						style="width: 100px; height: 80px;">
-					<h2 class="h5">DREAM PROJECT</h2>
+					<h2 class="h5">PROJECT</h2>
 					<!-- <span>Web Developer</span> -->
 				</div>
 				<!-- Small Brand information, appears on minimized sidebar-->
 				<div class="sidenav-header-logo">
-					<a href="index.html" class="brand-small text-center"> <img
+					<a href="${pageContext.request.contextPath }/"
+						class="brand-small text-center"> <img
 						src="${pageContext.request.contextPath }/static/img/sameer/compLogo.png"
 						alt="person" class="img-fluid rounded-circle"
-						style="width: 40px; height: 40px;">
-					<!-- <strong>C</strong><strong
+						style="width: 40px; height: 40px;"> <!-- <strong>C</strong><strong
 						class="text-primary">P</strong> --></a>
 				</div>
 			</div>

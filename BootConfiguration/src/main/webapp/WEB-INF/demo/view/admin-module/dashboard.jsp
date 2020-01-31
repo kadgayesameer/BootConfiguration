@@ -98,7 +98,7 @@
 	<section class="dashboard-header section-padding">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-md-stretch">
-				To Do List
+				<!-- To Do List -->
 				<div class="col-lg-3 col-md-6">
 					<div class="card to-do">
 						<h2 class="display h4">To do List</h2>
@@ -481,7 +481,7 @@
 					<!-- Daily Feed Widget End -->
 				</div>
 				<div class="col-lg-4 col-md-6">
-					Recent Activities Widget
+					<!-- Recent Activities Widget -->
 					<div id="recent-activities-wrapper" class="card updates activities">
 						<div id="activites-header"
 							class="card-header d-flex justify-content-between align-items-center">

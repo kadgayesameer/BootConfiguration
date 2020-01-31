@@ -20,9 +20,11 @@
 						class="navbar-holder d-flex align-items-center justify-content-between">
 						<div class="navbar-header">
 							<a id="toggle-btn" href="#" class="menu-btn"><i
-								class="icon-bars"> </i></a><a href="index.html" class="navbar-brand">
+								class="icon-bars"> </i></a><a
+								href="${pageContext.request.contextPath }/" class="navbar-brand">
 								<div class="brand-text d-none d-md-inline-block">
-									<!-- <span>Bootstrap </span> --><strong class="text-primary">CRUD PROJECT</strong>
+									<!-- <span>Bootstrap </span> -->
+									<!-- <strong class="text-primary">PROJECT</strong> -->
 								</div>
 							</a>
 						</div>
@@ -88,8 +90,9 @@
 									<li><a rel="nofollow" href="#"
 										class="dropdown-item d-flex">
 											<div class="msg-profile">
-												<img src="${pageContext.request.contextPath }/static/img/avatar-1.jpg" alt="..."
-													class="img-fluid rounded-circle">
+												<img
+													src="${pageContext.request.contextPath }/static/img/avatar-1.jpg"
+													alt="..." class="img-fluid rounded-circle">
 											</div>
 											<div class="msg-body">
 												<h3 class="h5">Jason Doe</h3>
@@ -100,8 +103,9 @@
 									<li><a rel="nofollow" href="#"
 										class="dropdown-item d-flex">
 											<div class="msg-profile">
-												<img src="${pageContext.request.contextPath }/static/img/avatar-2.jpg" alt="..."
-													class="img-fluid rounded-circle">
+												<img
+													src="${pageContext.request.contextPath }/static/img/avatar-2.jpg"
+													alt="..." class="img-fluid rounded-circle">
 											</div>
 											<div class="msg-body">
 												<h3 class="h5">Frank Williams</h3>
@@ -112,8 +116,9 @@
 									<li><a rel="nofollow" href="#"
 										class="dropdown-item d-flex">
 											<div class="msg-profile">
-												<img src="${pageContext.request.contextPath }/static/img/avatar-3.jpg" alt="..."
-													class="img-fluid rounded-circle">
+												<img
+													src="${pageContext.request.contextPath }/static/img/avatar-3.jpg"
+													alt="..." class="img-fluid rounded-circle">
 											</div>
 											<div class="msg-body">
 												<h3 class="h5">Ashley Wood</h3>
