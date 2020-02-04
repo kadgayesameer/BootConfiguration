@@ -11,9 +11,10 @@
 <body>
 	<!-- header -->
 	<!-- navbar-->
-	<div id="header"
+	<!-- <div id="header"
 		style="position: absolute; top: 0px; left: 0px; height: 200px; right: 0px;">
-		<header class="header">
+		 -->
+		 <header class="header">
 			<nav class="navbar">
 				<div class="container-fluid">
 					<div
@@ -161,6 +162,6 @@
 				</div>
 			</nav>
 		</header>
-	</div>
+	<!-- </div> -->
 </body>
 </html>

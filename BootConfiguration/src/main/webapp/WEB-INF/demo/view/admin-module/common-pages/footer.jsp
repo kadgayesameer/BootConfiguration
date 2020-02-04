@@ -7,9 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div id="footer"
+	<!-- <div id="footer"
 		style="position: absolute; bottom: 0px; height: 200px; left: 0px; right: 0px; overflow: hidden;">
-		<footer class="main-footer">
+		 --><footer class="main-footer">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-6">
@@ -24,7 +24,7 @@
 					</div>
 				</div>
 			</div>
-		</footer>
-	</div>
+		</footer><!-- 
+	</div> -->
 </body>
 </html>

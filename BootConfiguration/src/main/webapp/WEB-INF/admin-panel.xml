@@ -66,4 +66,11 @@
 			value="/WEB-INF/demo/view/admin-module/exam.jsp" />
 	</definition>
 
+	<definition name="engineFactory"
+		extends="adminbase.definition">
+		<put-attribute name="title" value="Engine Factory" />
+		<put-attribute name="body"
+			value="/WEB-INF/demo/view/admin-module/engineFactory.jsp" />
+	</definition>
+
 </tiles-definitions>
