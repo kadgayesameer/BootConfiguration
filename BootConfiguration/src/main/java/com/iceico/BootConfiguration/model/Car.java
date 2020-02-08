@@ -2,6 +2,7 @@ package com.iceico.BootConfiguration.model;
 
 import java.io.Serializable;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -39,7 +40,7 @@ public class Car implements Serializable {
 	@Column(name = "car_model")
 	private String carName;
 	
-	@ManyToOne(fetch = FetchType.EAGER)
+	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	@JoinColumn(name = "engineId", insertable = true, nullable = true, updatable = true)
 	private Engine engine;
 

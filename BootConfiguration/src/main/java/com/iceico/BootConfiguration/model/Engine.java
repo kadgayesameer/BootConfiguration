@@ -3,6 +3,7 @@ package com.iceico.BootConfiguration.model;
 import java.io.Serializable;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -45,10 +46,10 @@ public class Engine implements Serializable {
 	private Integer engineHP;
 
 	
-	@OneToMany(mappedBy = "engine", fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "engine", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	private List<Car> car;
 	
-	@ManyToOne(fetch = FetchType.EAGER)
+	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	@JoinColumn(name = "factoryId", insertable = true, nullable = true, updatable = true)
 	private EngineFactory engineFactory;
 	

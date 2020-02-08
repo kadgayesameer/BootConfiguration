@@ -51,7 +51,7 @@
 						data-toggle="collapse"> <i class="icon-interface-windows"></i>Triplets Dropdown
 					</a>
 						<ul id="tripletsDropdown" class="collapse list-unstyled ">
-							<li><a href="${pageContext.request.contextPath }/admin/engine/factory">EngineFactory</a></li>
+							<li><a href="${pageContext.request.contextPath }/admin/engine/factory">Engine Factory</a></li>
 						</ul>
 					</li>
 					<%-- <li><a href="${pageContext.request.contextPath }/sample/login">
