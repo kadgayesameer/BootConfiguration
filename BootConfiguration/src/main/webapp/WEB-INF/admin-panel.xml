@@ -73,4 +73,11 @@
 			value="/WEB-INF/demo/view/admin-module/engineFactory.jsp" />
 	</definition>
 
+	<definition name="editor"
+		extends="adminbase.definition">
+		<put-attribute name="title" value="Editor" />
+		<put-attribute name="body"
+			value="/WEB-INF/demo/view/admin-module/compiler/editor.jsp" />
+	</definition>
+
 </tiles-definitions>

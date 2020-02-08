@@ -54,6 +54,15 @@
 							<li><a href="${pageContext.request.contextPath }/admin/engine/factory">Engine Factory</a></li>
 						</ul>
 					</li>
+					
+					<li><a href="#compilerDropdown" aria-expanded="false"
+						data-toggle="collapse"> <i class="icon-interface-windows"></i>Compiler Dropdown
+					</a>
+						<ul id="compilerDropdown" class="collapse list-unstyled ">
+							<li><a href="${pageContext.request.contextPath }/admin/compiler">Compiler</a></li>
+						</ul>
+					</li>
+					
 					<%-- <li><a href="${pageContext.request.contextPath }/sample/login">
 
 						data-toggle="collapse"> <i class="icon-interface-windows"></i>Task
